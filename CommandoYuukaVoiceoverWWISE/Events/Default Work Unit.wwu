@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_CommandoYuuka_Defeat" ID="{AD17D97E-3EEA-4D44-8B6A-399F020157F1}">
+					<ChildrenList>
+						<Action Name="" ID="{111606D1-7930-4281-B391-E42193FB0FC0}" ShortID="211887449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{FDB406E4-5FA9-435B-AF3E-2B4C2D490B8F}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Victory" ID="{51484B61-DD0E-40F6-B4BD-F8F07A0D8123}">
+					<ChildrenList>
+						<Action Name="" ID="{DC2ACB99-6E49-4367-99EF-76BDE113BA9C}" ShortID="985974989">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{F98FFEED-81DD-42EE-9CB4-B78F7FD7A236}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_TakeDamage" ID="{FEE46276-5994-44D4-88AF-93B524F0DC2D}">
+					<ChildrenList>
+						<Action Name="" ID="{3888214C-D19F-426A-97A3-D94032070479}" ShortID="37112689">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakeDamage" ID="{0C7CC10F-BF33-44D1-8B3F-533658F452CA}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Shout" ID="{634ECF2E-09B8-42BE-887E-A508C058568A}">
+					<ChildrenList>
+						<Action Name="" ID="{59A6F2FA-C6AE-46AD-813F-0DE79C2E9D55}" ShortID="1014398288">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shout" ID="{3880927F-2A67-49C3-9F3D-73BD6CA4724D}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Spawn" ID="{78178EF2-82BF-4516-A304-77E6E89A6CD9}">
+					<ChildrenList>
+						<Action Name="" ID="{17A5EF55-802C-4BCE-92BA-757DF2E2EB57}" ShortID="244478167">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spawn" ID="{13DD965E-899B-411F-BF62-198C17744B34}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_CommonSkill" ID="{5FC896B5-F57B-4C53-BF09-200331B95A4C}">
+					<ChildrenList>
+						<Action Name="" ID="{52CB1A51-15A5-4C03-97A0-1522C28EA5FE}" ShortID="105048593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_CommonSkill" ID="{9187075E-4DD6-454D-B77F-D4A3455142B5}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_TitleDrop" ID="{6DBD8107-EF95-49D7-92C6-0B15E37DDD74}">
+					<ChildrenList>
+						<Action Name="" ID="{2F74D8BD-21F0-4638-9105-148359C5D1D3}" ShortID="285518045">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Title" ID="{2400BB83-BDE3-48CB-BC0E-95F7C8EBDD91}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_LowHealth" ID="{13BFA466-FCC8-4BD3-8DAF-599FF11FA856}">
+					<ChildrenList>
+						<Action Name="" ID="{51C13E3F-0C9E-4523-BCE8-B5211D495D47}" ShortID="952233801">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_Covered_1" ID="{D55D879D-F7BE-4337-B600-F52322721D52}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Blocked" ID="{B100F5DD-2B23-4E80-BDB5-B9BABE2586E0}">
+					<ChildrenList>
+						<Action Name="" ID="{49D3B0DD-9C0B-4103-AF93-3099B80A56DA}" ShortID="922466004">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_Defense_1" ID="{D5C59D51-8DE5-4843-ADDC-616323C0B7CE}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_TeleporterStart" ID="{B0D03C88-D96A-4DD9-9E42-E4F80918D284}">
+					<ChildrenList>
+						<Action Name="" ID="{45AD695D-E020-4C6E-AB74-A6E978B3760D}" ShortID="37152585">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TeleporterStart" ID="{A3A25D14-30BD-4A77-B5F7-3CD944AEFD10}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_LevelUp" ID="{6F87D7B2-E194-4D72-A53B-DE9D3D5A2E0D}">
+					<ChildrenList>
+						<Action Name="" ID="{880505E3-8BEC-457D-B65F-800DE6B9DCD1}" ShortID="288246804">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelUp" ID="{96483145-EBD4-411C-8421-8BC17B652044}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_AcquireScepter" ID="{605A9536-2E6C-4764-9D21-A84FEDE5216D}">
+					<ChildrenList>
+						<Action Name="" ID="{AFDAEF40-210B-484F-AA11-92E40B2B0078}" ShortID="181017522">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_ExWeapon_Get" ID="{C56746C8-9CE8-4568-9C5F-BD07003E8337}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Lobby" ID="{65DBAD7F-DE64-4767-B756-790C223211B2}">
+					<ChildrenList>
+						<Action Name="" ID="{B96D0CE8-E3BB-490F-BD91-03779F10BCF8}" ShortID="828029162">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby" ID="{B2C276CF-04BC-47F1-BE3E-865DFCD1DD8C}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

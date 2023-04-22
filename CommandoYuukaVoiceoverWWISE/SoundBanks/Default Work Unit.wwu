@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB859A2D-0EC7-4E96-8422-21B3382D72B2}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CB859A2D-0EC7-4E96-8422-21B3382D72B2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="CommandoYuukaSounds" ID="{E3F33634-63B9-47D8-A420-D376C34C4053}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_CommandoYuuka_Victory" ID="{51484B61-DD0E-40F6-B4BD-F8F07A0D8123}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_Shout" ID="{634ECF2E-09B8-42BE-887E-A508C058568A}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_TakeDamage" ID="{FEE46276-5994-44D4-88AF-93B524F0DC2D}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_Spawn" ID="{78178EF2-82BF-4516-A304-77E6E89A6CD9}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_AcquireScepter" ID="{605A9536-2E6C-4764-9D21-A84FEDE5216D}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_Lobby" ID="{65DBAD7F-DE64-4767-B756-790C223211B2}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_TitleDrop" ID="{6DBD8107-EF95-49D7-92C6-0B15E37DDD74}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_LowHealth" ID="{13BFA466-FCC8-4BD3-8DAF-599FF11FA856}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_CommonSkill" ID="{5FC896B5-F57B-4C53-BF09-200331B95A4C}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_Defeat" ID="{AD17D97E-3EEA-4D44-8B6A-399F020157F1}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_LevelUp" ID="{6F87D7B2-E194-4D72-A53B-DE9D3D5A2E0D}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_TeleporterStart" ID="{B0D03C88-D96A-4DD9-9E42-E4F80918D284}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CommandoYuuka_Blocked" ID="{B100F5DD-2B23-4E80-BDB5-B9BABE2586E0}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

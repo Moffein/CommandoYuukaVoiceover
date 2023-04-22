@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="825536434" Language="SFX" Hash="3527380676">
+			<ObjectPath>\SoundBanks\Default Work Unit\CommandoYuukaSounds</ObjectPath>
+			<ShortName>CommandoYuukaSounds</ShortName>
+			<Path>CommandoYuukaSounds.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2004737296" Name="Play_CommandoYuuka_AcquireScepter" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_AcquireScepter">
+					<IncludedMemoryFiles>
+						<File Id="346560552" Language="SFX">
+							<ShortName>Yuuka_ExWeapon_Get.wav</ShortName>
+							<Path>SFX\Yuuka_ExWeapon_Get_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="951819530" Name="Play_CommandoYuuka_Blocked" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Blocked">
+					<IncludedMemoryFiles>
+						<File Id="365469655" Language="SFX">
+							<ShortName>Yuuka_Battle_Defense_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Defense_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2622548560" Name="Play_CommandoYuuka_CommonSkill" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_CommonSkill">
+					<IncludedMemoryFiles>
+						<File Id="990236852" Language="SFX">
+							<ShortName>Yuuka_CommonSkill.wav</ShortName>
+							<Path>SFX\Yuuka_CommonSkill_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="821818035" Name="Play_CommandoYuuka_Defeat" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Defeat">
+					<IncludedMemoryFiles>
+						<File Id="56185522" Language="SFX">
+							<ShortName>Yuuka_Battle_Retire.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Retire_10C4C929.wem</Path>
+						</File>
+						<File Id="604969384" Language="SFX">
+							<ShortName>Yuuka_Tactic_Defeat_1.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_Defeat_1_10C4C929.wem</Path>
+						</File>
+						<File Id="817874288" Language="SFX">
+							<ShortName>Yuuka_Tactic_Defeat_2.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_Defeat_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="96044647" Name="Play_CommandoYuuka_LevelUp" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_LevelUp">
+					<IncludedMemoryFiles>
+						<File Id="390574414" Language="SFX">
+							<ShortName>Yuuka_Growup_3.wav</ShortName>
+							<Path>SFX\Yuuka_Growup_3_10C4C929.wem</Path>
+						</File>
+						<File Id="399921419" Language="SFX">
+							<ShortName>Yuuka_Growup_1.wav</ShortName>
+							<Path>SFX\Yuuka_Growup_1_10C4C929.wem</Path>
+						</File>
+						<File Id="597898246" Language="SFX">
+							<ShortName>Yuuka_Growup_2.wav</ShortName>
+							<Path>SFX\Yuuka_Growup_2_10C4C929.wem</Path>
+						</File>
+						<File Id="825947251" Language="SFX">
+							<ShortName>Yuuka_Growup_4.wav</ShortName>
+							<Path>SFX\Yuuka_Growup_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1806910606" Name="Play_CommandoYuuka_Lobby" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby">
+					<IncludedMemoryFiles>
+						<File Id="138676309" Language="SFX">
+							<ShortName>Yuuka_Login_1.wav</ShortName>
+							<Path>SFX\Yuuka_Login_1_10C4C929.wem</Path>
+						</File>
+						<File Id="188341789" Language="SFX">
+							<ShortName>Yuuka_Lobby_2.wav</ShortName>
+							<Path>SFX\Yuuka_Lobby_2_10C4C929.wem</Path>
+						</File>
+						<File Id="227923889" Language="SFX">
+							<ShortName>Yuuka_Lobby_1.wav</ShortName>
+							<Path>SFX\Yuuka_Lobby_1_10C4C929.wem</Path>
+						</File>
+						<File Id="234076900" Language="SFX">
+							<ShortName>Yuuka_Lobby_5.wav</ShortName>
+							<Path>SFX\Yuuka_Lobby_5_10C4C929.wem</Path>
+						</File>
+						<File Id="414329847" Language="SFX">
+							<ShortName>Yuuka_Lobby_4.wav</ShortName>
+							<Path>SFX\Yuuka_Lobby_4_10C4C929.wem</Path>
+						</File>
+						<File Id="489763893" Language="SFX">
+							<ShortName>Yuuka_Lobby_3.wav</ShortName>
+							<Path>SFX\Yuuka_Lobby_3_10C4C929.wem</Path>
+						</File>
+						<File Id="576160944" Language="SFX">
+							<ShortName>Yuuka_Login_2.wav</ShortName>
+							<Path>SFX\Yuuka_Login_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1079413954" Name="Play_CommandoYuuka_LowHealth" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_LowHealth">
+					<IncludedMemoryFiles>
+						<File Id="658185369" Language="SFX">
+							<ShortName>Yuuka_Battle_Covered_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Covered_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3767535073" Name="Play_CommandoYuuka_Shout" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Shout">
+					<IncludedMemoryFiles>
+						<File Id="90255124" Language="SFX">
+							<ShortName>Yuuka_Battle_Shout_2.ogg.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Shout_2.ogg_10C4C929.wem</Path>
+						</File>
+						<File Id="504653086" Language="SFX">
+							<ShortName>Yuuka_Battle_Shout_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Shout_1_10C4C929.wem</Path>
+						</File>
+						<File Id="515358168" Language="SFX">
+							<ShortName>Yuuka_Battle_Shout_3.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Shout_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="307939131" Name="Play_CommandoYuuka_Spawn" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Spawn">
+					<IncludedMemoryFiles>
+						<File Id="101099799" Language="SFX">
+							<ShortName>Yuuka_Battle_In_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_In_1_10C4C929.wem</Path>
+						</File>
+						<File Id="463686919" Language="SFX">
+							<ShortName>Yuuka_Battle_In_2.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="579430091" Language="SFX">
+							<ShortName>Yuuka_Tactic_In_2.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="724301207" Language="SFX">
+							<ShortName>Yuuka_Tactic_In_1.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_In_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1420748788" Name="Play_CommandoYuuka_TakeDamage" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_TakeDamage">
+					<IncludedMemoryFiles>
+						<File Id="171627256" Language="SFX">
+							<ShortName>Yuuka_Battle_Damage_2.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Damage_2_10C4C929.wem</Path>
+						</File>
+						<File Id="226288733" Language="SFX">
+							<ShortName>Yuuka_Battle_Damage_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Damage_1_10C4C929.wem</Path>
+						</File>
+						<File Id="447216740" Language="SFX">
+							<ShortName>Yuuka_Battle_Damage_3.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Damage_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1087862730" Name="Play_CommandoYuuka_TeleporterStart" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_TeleporterStart">
+					<IncludedMemoryFiles>
+						<File Id="19361950" Language="SFX">
+							<ShortName>Yuuka_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+						<File Id="38542921" Language="SFX">
+							<ShortName>Yuuka_ExSkill_3.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_3_10C4C929.wem</Path>
+						</File>
+						<File Id="64384609" Language="SFX">
+							<ShortName>Yuuka_ExSkill_Level_3.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_Level_3_10C4C929.wem</Path>
+						</File>
+						<File Id="600753922" Language="SFX">
+							<ShortName>Yuuka_ExSkill_2.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_2_10C4C929.wem</Path>
+						</File>
+						<File Id="736941155" Language="SFX">
+							<ShortName>Yuuka_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1028631496" Language="SFX">
+							<ShortName>Yuuka_ExSkill_1.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4051395411" Name="Play_CommandoYuuka_TitleDrop" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_TitleDrop">
+					<IncludedMemoryFiles>
+						<File Id="320028994" Language="SFX">
+							<ShortName>Yuuka_Title.wav</ShortName>
+							<Path>SFX\Yuuka_Title_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1834610172" Name="Play_CommandoYuuka_Victory" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Victory">
+					<IncludedMemoryFiles>
+						<File Id="271555055" Language="SFX">
+							<ShortName>Yuuka_Tactic_Victory_1.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="695527691" Language="SFX">
+							<ShortName>Yuuka_Tactic_Victory_2.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_Victory_2_10C4C929.wem</Path>
+						</File>
+						<File Id="705617012" Language="SFX">
+							<ShortName>Yuuka_Battle_Victory_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="945024259" Language="SFX">
+							<ShortName>Yuuka_Battle_Victory_2.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Victory_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX" ObjectPath="\Game Parameters\Default Work Unit\Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="263542888">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
