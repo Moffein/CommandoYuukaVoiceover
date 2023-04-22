@@ -268,7 +268,7 @@ namespace CommandoYuukaVoiceover.Components
 
         public bool CanPlayVoiceline()
         {
-            return voiceCooldown <= 0f;
+            return voiceCooldown <= 0f && !(healthComponent && !healthComponent.alive);
         }
 
         public void SetVoiceCooldown(float newCooldown)
