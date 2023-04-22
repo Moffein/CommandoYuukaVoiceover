@@ -24,11 +24,17 @@ namespace CommandoYuukaVoiceover
         private static SurvivorDef commandoSurvivorDef;
 
         public static bool playedSeasonalVoiceline = false;
+        public static AssetBundle assetBundle;
 
         public void Awake()
         {
             BaseVoiceoverComponent.Init();
             RoR2.RoR2Application.onLoad += OnLoad;
+
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CommandoYuukaVoiceover.commandoyuukavoiceoverbundle"))
+            {
+                assetBundle = AssetBundle.LoadFromStream(stream);
+            }
 
             using (var bankStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CommandoYuukaVoiceover.CommandoYuukaSounds.bnk"))
             {
@@ -62,6 +68,7 @@ namespace CommandoYuukaVoiceover
         private void RiskOfOptionsCompat()
         {
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.CheckBoxOption(enableVoicelines));
+            RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("flyingYuuka"));
         }
 
         private void AttachVoiceoverComponent(On.RoR2.CharacterBody.orig_Start orig, CharacterBody self)

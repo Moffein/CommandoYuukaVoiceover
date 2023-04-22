@@ -34,6 +34,7 @@ namespace CommandoYuukaVoiceover.Components
             On.RoR2.TeleporterInteraction.ChargingState.OnEnter += Hooks.ChargingState_OnEnter;
             On.RoR2.TeleporterInteraction.ChargedState.OnEnter += Hooks.ChargedState_OnEnter;
             On.RoR2.HealthComponent.TakeDamage += Hooks.HealthComponent_TakeDamage;
+            On.EntityStates.Missions.BrotherEncounter.EncounterFinished.OnEnter += Hooks.EncounterFinished_OnEnter;
         }
 
         private static class Hooks
@@ -88,6 +89,27 @@ namespace CommandoYuukaVoiceover.Components
                             if (bvc)
                             {
                                 bvc.PlayTeleporterFinish();
+                            }
+                        }
+                    }
+                }
+            }
+
+            public static void EncounterFinished_OnEnter(On.EntityStates.Missions.BrotherEncounter.EncounterFinished.orig_OnEnter orig, EntityStates.Missions.BrotherEncounter.EncounterFinished self)
+            {
+                orig(self);
+
+                foreach (CharacterMaster cm in CharacterMaster.readOnlyInstancesList)
+                {
+                    if (cm)
+                    {
+                        GameObject bodyObject = cm.GetBodyObject();
+                        if (bodyObject)
+                        {
+                            BaseVoiceoverComponent bvc = bodyObject.GetComponent<BaseVoiceoverComponent>();
+                            if (bvc)
+                            {
+                                bvc.PlayVictory();
                             }
                         }
                     }
@@ -297,6 +319,7 @@ namespace CommandoYuukaVoiceover.Components
         public abstract void PlayDeath();
         public abstract void PlayTeleporterStart();
         public abstract void PlayTeleporterFinish();
+        public abstract void PlayVictory();
         public abstract void PlayLowHealth();
         public abstract void PlayLevelUp();
     }

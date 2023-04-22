@@ -24,10 +24,10 @@ namespace CommandoYuukaVoiceover.Components
 
         protected override void Awake()
         {
-            spawnVoicelineDelay = 4f;
+            spawnVoicelineDelay = 3f;
             if (Run.instance && Run.instance.stageClearCount == 0)
             {
-                spawnVoicelineDelay = 8f;
+                spawnVoicelineDelay = 6.5f;
             }
             base.Awake();
         }
@@ -89,14 +89,22 @@ namespace CommandoYuukaVoiceover.Components
         public override void PlaySpecialAuthority()
         {
             if (specialCooldown > 0f) return;
-            //bool played = TryPlaySound("Play_CommandoYuuka_CommonSkill", 1.7f, false);
-            bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
-            if (played) specialCooldown = 10f;
+            if (Util.CheckRoll(30f))
+            {
+                bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
+                if (played) specialCooldown = 10f;
+            }
         }
 
         public override void PlayTeleporterFinish()
         {
             TryPlaySound("Play_CommandoYuuka_Victory", 3.8f, false);
+        }
+
+        //This one is forced to play
+        public override void PlayVictory()
+        {
+            TryPlaySound("Play_CommandoYuuka_Victory", 3.8f, true);
         }
 
         public override void PlayTeleporterStart()

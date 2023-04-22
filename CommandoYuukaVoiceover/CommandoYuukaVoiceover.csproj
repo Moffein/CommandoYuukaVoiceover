@@ -6,10 +6,12 @@
 
   <ItemGroup>
     <None Remove="CommandoYuukaSounds.bnk" />
+    <None Remove="commandoyuukavoiceoverbundle" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="CommandoYuukaSounds.bnk" />
+    <EmbeddedResource Include="commandoyuukavoiceoverbundle" />
   </ItemGroup>
 
   <ItemGroup>
