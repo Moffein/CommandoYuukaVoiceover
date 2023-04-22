@@ -11,6 +11,7 @@ namespace CommandoYuukaVoiceover.Components
 
         public static NetworkSoundEventDef nseSpecial;
         public static NetworkSoundEventDef nseBlock;
+        public static NetworkSoundEventDef nseShrineFail;
 
         public static ItemIndex ScepterIndex;
 
@@ -18,14 +19,15 @@ namespace CommandoYuukaVoiceover.Components
         private float blockedCooldown = 0f;
         private float specialCooldown = 0f;
         private float levelCooldown = 0f;
+        private float shrineOfChanceFailCooldown = 0f;
         private bool acquiredScepter = false;
 
         protected override void Awake()
         {
-            spawnVoicelineDelay = 3f;
+            spawnVoicelineDelay = 4f;
             if (Run.instance && Run.instance.stageClearCount == 0)
             {
-                spawnVoicelineDelay = 6f;
+                spawnVoicelineDelay = 8f;
             }
             base.Awake();
         }
@@ -51,7 +53,7 @@ namespace CommandoYuukaVoiceover.Components
 
         public override void PlayHurt(float percentHPLost)
         {
-            if (percentHPLost >= 0.15f)
+            if (percentHPLost >= 0.1f)
             {
                 TryPlaySound("Play_CommandoYuuka_TakeDamage", 0f, false);
             }
@@ -136,6 +138,16 @@ namespace CommandoYuukaVoiceover.Components
             if (acquiredScepter) return;
             TryPlaySound("Play_CommandoYuuka_AcquireScepter", 3.7f, false);
             acquiredScepter = true;
+        }
+
+        public void PlayShrineOfChanceFailServer()
+        {
+            if (!NetworkServer.active || shrineOfChanceFailCooldown > 0f) return;
+            if (Util.CheckRoll(15f))
+            {
+                bool played = TryPlayNetworkSound(nseShrineFail, 4.5f, false);
+                if (played) shrineOfChanceFailCooldown = 60f;
+            }
         }
     }
 }

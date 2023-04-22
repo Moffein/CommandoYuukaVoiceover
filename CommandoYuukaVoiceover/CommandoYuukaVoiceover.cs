@@ -4,10 +4,12 @@ using CommandoYuukaVoiceover.Components;
 using R2API;
 using RoR2;
 using RoR2.Audio;
+using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Networking;
 
 namespace CommandoYuukaVoiceover
 {
@@ -20,6 +22,8 @@ namespace CommandoYuukaVoiceover
     {
         public static ConfigEntry<bool> enableVoicelines;
         private static SurvivorDef commandoSurvivorDef;
+
+        public static bool playedSeasonalVoiceline = false;
 
         public void Awake()
         {
@@ -40,6 +44,10 @@ namespace CommandoYuukaVoiceover
             CommandoYuukaVoiceoverComponent.nseBlock = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseBlock.eventName = "Play_CommandoYuuka_Blocked";
             R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseBlock);
+
+            CommandoYuukaVoiceoverComponent.nseShrineFail = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            CommandoYuukaVoiceoverComponent.nseShrineFail.eventName = "Play_CommandoYuuka_ShrineFail";
+            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseShrineFail);
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
@@ -103,8 +111,36 @@ namespace CommandoYuukaVoiceover
                         SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
                         if (CommandoYuukaVoiceoverComponent.requiredSkinDefs.Contains(safe))
                         {
-                            bool flag = true;
-                            if (flag)
+                            bool played = false;
+                            if (!playedSeasonalVoiceline)
+                            {
+                                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
+                                {
+                                    Util.PlaySound("Play_CommandoYuuka_Lobby_Newyear", self.mannequinInstanceTransform.gameObject);
+                                    played = true;
+                                }
+                                else if (System.DateTime.Today.Month == 3 && System.DateTime.Today.Day == 14)
+                                {
+                                    Util.PlaySound("Play_CommandoYuuka_Lobby_bday", self.mannequinInstanceTransform.gameObject);
+                                    played = true;
+                                }
+                                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
+                                {
+                                    Util.PlaySound("Play_CommandoYuuka_Lobby_Halloween", self.mannequinInstanceTransform.gameObject);
+                                    played = true;
+                                }
+                                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                                {
+                                    Util.PlaySound("Play_CommandoYuuka_Lobby_xmas", self.mannequinInstanceTransform.gameObject);
+                                    played = true;
+                                }
+
+                                if (played)
+                                {
+                                    playedSeasonalVoiceline = true;
+                                }
+                            }
+                            if (!played)
                             {
                                 if (Util.CheckRoll(5f))
                                 {
@@ -114,6 +150,25 @@ namespace CommandoYuukaVoiceover
                                 {
                                     Util.PlaySound("Play_CommandoYuuka_Lobby", self.mannequinInstanceTransform.gameObject);
                                 }
+                            }
+                        }
+                    }
+                };
+
+                On.RoR2.ShrineChanceBehavior.AddShrineStack += (orig, self, activator) =>
+                {
+                    int successes = self.successfulPurchaseCount;
+                    orig(self, activator);
+
+                    //No change in successes = fail
+                    if (NetworkServer.active && self.successfulPurchaseCount == successes)
+                    {
+                        if (activator)
+                        {
+                            CommandoYuukaVoiceoverComponent vo = activator.GetComponent<CommandoYuukaVoiceoverComponent>();
+                            if (vo)
+                            {
+                                vo.PlayShrineOfChanceFailServer();
                             }
                         }
                     }

@@ -3,15 +3,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	307939131	Play_CommandoYuuka_Spawn			\Default Work Unit\Play_CommandoYuuka_Spawn	
 	821818035	Play_CommandoYuuka_Defeat			\Default Work Unit\Play_CommandoYuuka_Defeat	
 	951819530	Play_CommandoYuuka_Blocked			\Default Work Unit\Play_CommandoYuuka_Blocked	
+	964494936	Play_CommandoYuuka_Lobby_xmas			\Default Work Unit\Play_CommandoYuuka_Lobby_xmas	
+	1030270974	Play_CommandoYuuka_Lobby_Newyear			\Default Work Unit\Play_CommandoYuuka_Lobby_Newyear	
 	1079413954	Play_CommandoYuuka_LowHealth			\Default Work Unit\Play_CommandoYuuka_LowHealth	
 	1087862730	Play_CommandoYuuka_TeleporterStart			\Default Work Unit\Play_CommandoYuuka_TeleporterStart	
 	1420748788	Play_CommandoYuuka_TakeDamage			\Default Work Unit\Play_CommandoYuuka_TakeDamage	
+	1449522110	Play_CommandoYuuka_Lobby_Halloween			\Default Work Unit\Play_CommandoYuuka_Lobby_Halloween	
 	1806910606	Play_CommandoYuuka_Lobby			\Default Work Unit\Play_CommandoYuuka_Lobby	
 	1834610172	Play_CommandoYuuka_Victory			\Default Work Unit\Play_CommandoYuuka_Victory	
 	2004737296	Play_CommandoYuuka_AcquireScepter			\Default Work Unit\Play_CommandoYuuka_AcquireScepter	
 	2622548560	Play_CommandoYuuka_CommonSkill			\Default Work Unit\Play_CommandoYuuka_CommonSkill	
+	3042329199	Play_CommandoYuuka_ShrineFail			\Default Work Unit\Play_CommandoYuuka_ShrineFail	
 	3767535073	Play_CommandoYuuka_Shout			\Default Work Unit\Play_CommandoYuuka_Shout	
 	4051395411	Play_CommandoYuuka_TitleDrop			\Default Work Unit\Play_CommandoYuuka_TitleDrop	
+	4146845953	Play_CommandoYuuka_Lobby_bday			\Default Work Unit\Play_CommandoYuuka_Lobby_bday	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
@@ -30,6 +35,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	227923889	Yuuka_Lobby_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Lobby_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Lobby\Yuuka_Lobby_1		450326
 	234076900	Yuuka_Lobby_5	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Lobby_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Lobby\Yuuka_Lobby_5		565892
 	271555055	Yuuka_Tactic_Victory_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Tactic_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Victory\Yuuka_Tactic_Victory_1		169526
+	276240643	Yuuka_Season_Xmas	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Season_Xmas_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Season_Xmas		911554
 	320028994	Yuuka_Title	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Title_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Title		97518
 	346560552	Yuuka_ExWeapon_Get	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_ExWeapon_Get_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_ExWeapon_Get		326658
 	365469655	Yuuka_Battle_Defense_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Defense_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Battle_Defense_1		67256
@@ -41,11 +47,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	489763893	Yuuka_Lobby_3	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Lobby_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Lobby\Yuuka_Lobby_2_and_3\Yuuka_Lobby_3		386264
 	504653086	Yuuka_Battle_Shout_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Shout_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Shout\Yuuka_Battle_Shout_1		47472
 	515358168	Yuuka_Battle_Shout_3	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Shout_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Shout\Yuuka_Battle_Shout_3		40464
+	526468187	Yuuka_Season_Birthday	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Season_Birthday_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Season_Birthday		924188
+	526784156	Yuuka_Season_Halloween	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Season_Halloween_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Season_Halloween		616280
 	576160944	Yuuka_Login_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Login_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Lobby\Yuuka_Login_2		607468
 	579430091	Yuuka_Tactic_In_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Tactic_In_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Spawn\Yuuka_Tactic_In_2		436218
 	597898246	Yuuka_Growup_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Growup_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\LevelUp\Yuuka_Growup_2		357488
 	600753922	Yuuka_ExSkill_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_ExSkill_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\TeleporterStart\Yuuka_ExSkill_2		356736
 	604969384	Yuuka_Tactic_Defeat_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Tactic_Defeat_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Defeat\Yuuka_Tactic_Defeat_1		377650
+	633912011	Yuuka_Season_Newyear	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Season_Newyear_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Season_Newyear		543472
+	644165261	Yuuka_Gachaget	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Gachaget_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Lobby\Yuuka_Gachaget		641116
 	658185369	Yuuka_Battle_Covered_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Covered_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Battle_Covered_1		169890
 	695527691	Yuuka_Tactic_Victory_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Tactic_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Victory\Yuuka_Tactic_Victory_2		329890
 	705617012	Yuuka_Battle_Victory_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Victory\Yuuka_Battle_Victory_1		223908
@@ -55,5 +65,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	825947251	Yuuka_Growup_4	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Growup_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\LevelUp\Yuuka_Growup_4		630668
 	945024259	Yuuka_Battle_Victory_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Battle_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Victory\Yuuka_Battle_Victory_2		320960
 	990236852	Yuuka_CommonSkill	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_CommonSkill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_CommonSkill		146820
+	1007828254	Yuuka_Cafe_monolog_2	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_Cafe_monolog_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\Yuuka_Cafe_monolog_2		395504
 	1028631496	Yuuka_ExSkill_1	C:\Users\Node\RoR2 Mods\CommandoYuukaVoiceover\CommandoYuukaVoiceoverWWISE\.cache\Windows\SFX\Yuuka_ExSkill_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Yuuka\TeleporterStart\Yuuka_ExSkill_1		285178
 

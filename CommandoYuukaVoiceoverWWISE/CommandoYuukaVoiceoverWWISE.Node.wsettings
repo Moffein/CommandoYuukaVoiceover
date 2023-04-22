@@ -4,7 +4,10 @@
 		<UserProjectSettings Name="" ID="{28CA8FD4-0A82-4F77-9328-B69B2F645DA4}">
 			<PropertyList>
 				<Property Name="Event Action List\{13BFA466-FCC8-4BD3-8DAF-599FF11FA856}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1732C11D-255E-42DE-82AE-53F29A43C530}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51484B61-DD0E-40F6-B4BD-F8F07A0D8123}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{539DC53B-0EA2-4B68-BB36-6653CFE53582}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5DF14CFC-AE92-4212-A0ED-B88AB139645A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5FC896B5-F57B-4C53-BF09-200331B95A4C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{605A9536-2E6C-4764-9D21-A84FEDE5216D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{634ECF2E-09B8-42BE-887E-A508C058568A}\x64_Expand States" Type="string" Value=""/>
@@ -12,6 +15,8 @@
 				<Property Name="Event Action List\{6DBD8107-EF95-49D7-92C6-0B15E37DDD74}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6F87D7B2-E194-4D72-A53B-DE9D3D5A2E0D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{78178EF2-82BF-4516-A304-77E6E89A6CD9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8DC1D33A-5AA0-437D-AFB2-BAE6EA86CE64}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8FB46D74-05EA-4D6C-BDE9-56C073F9DF28}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AD17D97E-3EEA-4D44-8B6A-399F020157F1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B0D03C88-D96A-4DD9-9E42-E4F80918D284}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B100F5DD-2B23-4E80-BDB5-B9BABE2586E0}\x64_Expand States" Type="string" Value=""/>

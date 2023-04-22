@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="825536434" Language="SFX" Hash="3527380676">
+		<SoundBank Id="825536434" Language="SFX" Hash="3112327889">
 			<ObjectPath>\SoundBanks\Default Work Unit\CommandoYuukaSounds</ObjectPath>
 			<ShortName>CommandoYuukaSounds</ShortName>
 			<Path>CommandoYuukaSounds.bnk</Path>
@@ -106,6 +106,42 @@
 							<ShortName>Yuuka_Login_2.wav</ShortName>
 							<Path>SFX\Yuuka_Login_2_10C4C929.wem</Path>
 						</File>
+						<File Id="644165261" Language="SFX">
+							<ShortName>Yuuka_Gachaget.wav</ShortName>
+							<Path>SFX\Yuuka_Gachaget_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4146845953" Name="Play_CommandoYuuka_Lobby_bday" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby_bday">
+					<IncludedMemoryFiles>
+						<File Id="526468187" Language="SFX">
+							<ShortName>Yuuka_Season_Birthday.wav</ShortName>
+							<Path>SFX\Yuuka_Season_Birthday_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1449522110" Name="Play_CommandoYuuka_Lobby_Halloween" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby_Halloween">
+					<IncludedMemoryFiles>
+						<File Id="526784156" Language="SFX">
+							<ShortName>Yuuka_Season_Halloween.wav</ShortName>
+							<Path>SFX\Yuuka_Season_Halloween_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1030270974" Name="Play_CommandoYuuka_Lobby_Newyear" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby_Newyear">
+					<IncludedMemoryFiles>
+						<File Id="633912011" Language="SFX">
+							<ShortName>Yuuka_Season_Newyear.wav</ShortName>
+							<Path>SFX\Yuuka_Season_Newyear_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="964494936" Name="Play_CommandoYuuka_Lobby_xmas" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby_xmas">
+					<IncludedMemoryFiles>
+						<File Id="276240643" Language="SFX">
+							<ShortName>Yuuka_Season_Xmas.wav</ShortName>
+							<Path>SFX\Yuuka_Season_Xmas_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1079413954" Name="Play_CommandoYuuka_LowHealth" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_LowHealth">
@@ -129,6 +165,14 @@
 						<File Id="515358168" Language="SFX">
 							<ShortName>Yuuka_Battle_Shout_3.wav</ShortName>
 							<Path>SFX\Yuuka_Battle_Shout_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3042329199" Name="Play_CommandoYuuka_ShrineFail" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_ShrineFail">
+					<IncludedMemoryFiles>
+						<File Id="1007828254" Language="SFX">
+							<ShortName>Yuuka_Cafe_monolog_2.wav</ShortName>
+							<Path>SFX\Yuuka_Cafe_monolog_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

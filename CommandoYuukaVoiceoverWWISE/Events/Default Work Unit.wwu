@@ -146,6 +146,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CommandoYuuka_Lobby_bday" ID="{8DC1D33A-5AA0-437D-AFB2-BAE6EA86CE64}">
+					<ChildrenList>
+						<Action Name="" ID="{CB0D0D0D-CD7A-448D-998B-51875D92A674}" ShortID="119620869">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Season_Birthday" ID="{50BD5181-E522-40C6-A9CD-6AC72D6E449D}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Lobby_xmas" ID="{1732C11D-255E-42DE-82AE-53F29A43C530}">
+					<ChildrenList>
+						<Action Name="" ID="{B65F051E-C5A6-4A25-87E3-461283BB466F}" ShortID="325087542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Season_Xmas" ID="{0140CB3C-EE3C-4808-BD65-DE819A0C9A51}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Lobby_Newyear" ID="{539DC53B-0EA2-4B68-BB36-6653CFE53582}">
+					<ChildrenList>
+						<Action Name="" ID="{A003F6DF-1FA6-4F47-A8F7-67A359183C5E}" ShortID="108864717">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Season_Newyear" ID="{D41B91CF-592B-4AF0-9D3A-2B88E0020609}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Lobby_Halloween" ID="{5DF14CFC-AE92-4212-A0ED-B88AB139645A}">
+					<ChildrenList>
+						<Action Name="" ID="{1AC7EDA3-3C8C-4C12-9642-CB0736A5A707}" ShortID="519250133">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Season_Halloween" ID="{23F3BBA7-1B5C-4A07-98BD-605F01A357D3}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_ShrineFail" ID="{8FB46D74-05EA-4D6C-BDE9-56C073F9DF28}">
+					<ChildrenList>
+						<Action Name="" ID="{36BEB736-7D82-4515-BF60-1D6084F795A9}" ShortID="378622628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Cafe_monolog_2" ID="{732033C0-5156-4D54-8A0F-D8EF08B6DFB4}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
