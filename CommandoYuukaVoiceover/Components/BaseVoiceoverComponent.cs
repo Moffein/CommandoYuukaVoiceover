@@ -20,7 +20,7 @@ namespace CommandoYuukaVoiceover.Components
         private bool playedDeathSound = false;
         private float prevHP = 0f;
 
-        private int prevLevel = 1;  //starts at level 1
+        private int prevLevel = 0;
 
         protected SkillLocator skillLocator;
 
