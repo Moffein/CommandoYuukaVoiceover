@@ -16,7 +16,7 @@ namespace CommandoYuukaVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando")]
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.1.3")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.1.4")]
     [R2API.Utils.R2APISubmoduleDependency(nameof(SoundAPI), nameof(ContentAddition))]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
@@ -54,6 +54,10 @@ namespace CommandoYuukaVoiceover
             CommandoYuukaVoiceoverComponent.nseShrineFail = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseShrineFail.eventName = "Play_CommandoYuuka_ShrineFail";
             R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseShrineFail);
+
+            CommandoYuukaVoiceoverComponent.nseShout = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            CommandoYuukaVoiceoverComponent.nseShout.eventName = "Play_CommandoYuuka_Shout";
+            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseShout);
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))

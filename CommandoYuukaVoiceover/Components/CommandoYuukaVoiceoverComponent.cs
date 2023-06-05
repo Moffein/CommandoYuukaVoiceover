@@ -9,6 +9,7 @@ namespace CommandoYuukaVoiceover.Components
     {
         public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
 
+        public static NetworkSoundEventDef nseShout;
         public static NetworkSoundEventDef nseSpecial;
         public static NetworkSoundEventDef nseBlock;
         public static NetworkSoundEventDef nseShrineFail;
@@ -116,7 +117,7 @@ namespace CommandoYuukaVoiceover.Components
 
         public override void PlayUtilityAuthority()
         {
-            TryPlaySound("Play_CommandoYuuka_Shout", 0f, false);
+            TryPlayNetworkSound(nseShout, 0f, false);
         }
 
         public override void PlayDamageBlockedServer()
