@@ -141,7 +141,11 @@ namespace CommandoYuukaVoiceover.Components
             } 
             else
             {
-                PlayAcquireLegendary();
+                ItemDef id = ItemCatalog.GetItemDef(itemIndex);
+                if (id.deprecatedTier == ItemTier.Tier3)
+                {
+                    PlayAcquireLegendary();
+                }
             }
         }
 
