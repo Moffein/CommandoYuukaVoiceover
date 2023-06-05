@@ -93,7 +93,7 @@ namespace CommandoYuukaVoiceover.Components
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
-            if (played) specialCooldown = 40f;
+            if (played) specialCooldown = 30f;
         }
 
         public override void PlayTeleporterFinish()
