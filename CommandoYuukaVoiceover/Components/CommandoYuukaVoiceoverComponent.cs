@@ -92,11 +92,8 @@ namespace CommandoYuukaVoiceover.Components
         public override void PlaySpecialAuthority()
         {
             if (specialCooldown > 0f) return;
-            if (Util.CheckRoll(30f))
-            {
-                bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
-                if (played) specialCooldown = 10f;
-            }
+            bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
+            if (played) specialCooldown = 40f;
         }
 
         public override void PlayTeleporterFinish()
