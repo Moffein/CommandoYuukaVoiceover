@@ -142,7 +142,7 @@ namespace CommandoYuukaVoiceover.Components
             else
             {
                 ItemDef id = ItemCatalog.GetItemDef(itemIndex);
-                if (id.deprecatedTier == ItemTier.Tier3)
+                if (id && id.deprecatedTier == ItemTier.Tier3)
                 {
                     PlayAcquireLegendary();
                 }
