@@ -44,6 +44,8 @@ namespace CommandoYuukaVoiceover.Components
             if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (specialCooldown > 0f) specialCooldown -= Time.fixedDeltaTime;
+            if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
+            if (shrineOfChanceFailCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
         }
 
         public override void PlayDeath()
