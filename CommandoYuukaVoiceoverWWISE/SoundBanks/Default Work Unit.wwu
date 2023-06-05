@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="CommandoYuukaSounds" ID="{E3F33634-63B9-47D8-A420-D376C34C4053}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_CommandoYuuka_FindLegendary" ID="{8D95152D-7D9D-404F-B257-B884742A9B73}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CommandoYuuka_Victory" ID="{51484B61-DD0E-40F6-B4BD-F8F07A0D8123}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CommandoYuuka_Lobby_Halloween" ID="{5DF14CFC-AE92-4212-A0ED-B88AB139645A}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CommandoYuuka_Shout" ID="{634ECF2E-09B8-42BE-887E-A508C058568A}" WorkUnitID="{8D3399CC-F5BE-48C5-952D-1AD7ECE7B4A5}" Origin="Manual" Filter="7"/>

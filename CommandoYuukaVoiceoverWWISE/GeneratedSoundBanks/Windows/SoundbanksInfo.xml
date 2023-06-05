@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="825536434" Language="SFX" Hash="3112327889">
+		<SoundBank Id="825536434" Language="SFX" Hash="294709842">
 			<ObjectPath>\SoundBanks\Default Work Unit\CommandoYuukaSounds</ObjectPath>
 			<ShortName>CommandoYuukaSounds</ShortName>
 			<Path>CommandoYuukaSounds.bnk</Path>
@@ -53,6 +53,26 @@
 						<File Id="817874288" Language="SFX">
 							<ShortName>Yuuka_Tactic_Defeat_2.wav</ShortName>
 							<Path>SFX\Yuuka_Tactic_Defeat_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3403375318" Name="Play_CommandoYuuka_FindLegendary" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_FindLegendary">
+					<IncludedMemoryFiles>
+						<File Id="223349314" Language="SFX">
+							<ShortName>Yuuka_Relationship_Up_3.wav</ShortName>
+							<Path>SFX\Yuuka_Relationship_Up_3_10C4C929.wem</Path>
+						</File>
+						<File Id="540456505" Language="SFX">
+							<ShortName>Yuuka_Relationship_Up_4.wav</ShortName>
+							<Path>SFX\Yuuka_Relationship_Up_4_10C4C929.wem</Path>
+						</File>
+						<File Id="799090943" Language="SFX">
+							<ShortName>Yuuka_Relationship_Up_2.wav</ShortName>
+							<Path>SFX\Yuuka_Relationship_Up_2_10C4C929.wem</Path>
+						</File>
+						<File Id="928788629" Language="SFX">
+							<ShortName>Yuuka_Relationship_Up_1.wav</ShortName>
+							<Path>SFX\Yuuka_Relationship_Up_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -16,7 +16,7 @@ namespace CommandoYuukaVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando")]
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.1.1")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.1.2")]
     [R2API.Utils.R2APISubmoduleDependency(nameof(SoundAPI), nameof(ContentAddition))]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
@@ -112,6 +112,16 @@ namespace CommandoYuukaVoiceover
                     orig(self);
                     if (self.currentSurvivorDef == commandoSurvivorDef)
                     {
+                        //Loadout isn't loaded first time this is called, so we need to manually get it.
+                        //Probably not the most elegant way to resolve this.
+                        if (self.loadoutDirty)
+                        {
+                            if (self.networkUser)
+                            {
+                                self.networkUser.networkLoadout.CopyLoadout(self.currentLoadout);
+                            }
+                        }
+
                         //Check SkinDef
                         BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
                         int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);

@@ -139,6 +139,10 @@ namespace CommandoYuukaVoiceover.Components
             {
                 PlayAcquireScepter();
             } 
+            else
+            {
+                PlayAcquireLegendary();
+            }
         }
 
         public void PlayAcquireScepter()
@@ -146,6 +150,11 @@ namespace CommandoYuukaVoiceover.Components
             if (acquiredScepter) return;
             TryPlaySound("Play_CommandoYuuka_AcquireScepter", 3.7f, false);
             acquiredScepter = true;
+        }
+
+        public void PlayAcquireLegendary()
+        {
+            TryPlaySound("Play_CommandoYuuka_FindLegendary", 5.75f, false);
         }
 
         public void PlayShrineOfChanceFailServer()

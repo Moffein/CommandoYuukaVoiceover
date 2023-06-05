@@ -201,6 +201,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CommandoYuuka_FindLegendary" ID="{8D95152D-7D9D-404F-B257-B884742A9B73}">
+					<ChildrenList>
+						<Action Name="" ID="{3D21F2E2-9100-4919-9293-A3D1F462E57F}" ShortID="1035100010">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship" ID="{2BB68638-8777-4CB3-AB75-044E6EC46019}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
