@@ -1,7 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using CommandoYuukaVoiceover.Components;
-using R2API;
+using CommandoYuukaVoiceover.Modules;
 using RoR2;
 using RoR2.Audio;
 using System;
@@ -15,9 +15,7 @@ namespace CommandoYuukaVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando")]
-    [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.1.7")]
-    [R2API.Utils.R2APISubmoduleDependency(nameof(SoundAPI), nameof(ContentAddition))]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.2.0")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -28,36 +26,31 @@ namespace CommandoYuukaVoiceover
 
         public void Awake()
         {
+            Files.PluginInfo = this.Info;
             BaseVoiceoverComponent.Init();
             RoR2.RoR2Application.onLoad += OnLoad;
+            new Content().Initialize();
 
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CommandoYuukaVoiceover.commandoyuukavoiceoverbundle"))
             {
                 assetBundle = AssetBundle.LoadFromStream(stream);
             }
 
-            using (var bankStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CommandoYuukaVoiceover.CommandoYuukaSounds.bnk"))
-            {
-                var bytes = new byte[bankStream.Length];
-                bankStream.Read(bytes, 0, bytes.Length);
-                R2API.SoundAPI.SoundBanks.Add(bytes);
-            }
-
             CommandoYuukaVoiceoverComponent.nseSpecial = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseSpecial.eventName = "Play_CommandoYuuka_CommonSkill";
-            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseSpecial);
+            Content.networkSoundEventDefs.Add(CommandoYuukaVoiceoverComponent.nseSpecial);
 
             CommandoYuukaVoiceoverComponent.nseBlock = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseBlock.eventName = "Play_CommandoYuuka_Blocked";
-            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseBlock);
+            Content.networkSoundEventDefs.Add(CommandoYuukaVoiceoverComponent.nseBlock);
 
             CommandoYuukaVoiceoverComponent.nseShrineFail = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseShrineFail.eventName = "Play_CommandoYuuka_ShrineFail";
-            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseShrineFail);
+            Content.networkSoundEventDefs.Add(CommandoYuukaVoiceoverComponent.nseShrineFail);
 
             CommandoYuukaVoiceoverComponent.nseShout = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
             CommandoYuukaVoiceoverComponent.nseShout.eventName = "Play_CommandoYuuka_Shout";
-            R2API.ContentAddition.AddNetworkSoundEventDef(CommandoYuukaVoiceoverComponent.nseShout);
+            Content.networkSoundEventDefs.Add(CommandoYuukaVoiceoverComponent.nseShout);
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
@@ -66,6 +59,11 @@ namespace CommandoYuukaVoiceover
             }
 
             commandoSurvivorDef = Addressables.LoadAssetAsync<SurvivorDef>("RoR2/Base/Commando/Commando.asset").WaitForCompletion();
+        }
+
+        private void Start()
+        {
+            SoundBanks.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
