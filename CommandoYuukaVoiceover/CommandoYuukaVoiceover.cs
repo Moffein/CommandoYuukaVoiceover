@@ -55,6 +55,8 @@ namespace CommandoYuukaVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
+            if (!enableVoicelines.Value) DisableAllNSE();
+
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
