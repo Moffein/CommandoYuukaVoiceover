@@ -16,7 +16,7 @@ namespace CommandoYuukaVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando")]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.2.2")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.2.3")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -55,7 +55,6 @@ namespace CommandoYuukaVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
-            if (!enableVoicelines.Value) DisableAllNSE();
 
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
@@ -67,14 +66,7 @@ namespace CommandoYuukaVoiceover
 
         private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
         {
-            if (enableVoicelines.Value)
-            {
-                EnableAllNSE();
-            }
-            else
-            {
-                DisableAllNSE();
-            }
+            RefreshNSE();
         }
 
         private void Start()
@@ -217,21 +209,14 @@ namespace CommandoYuukaVoiceover
             nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseShout));
             nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseShrineFail));
             nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseSpecial));
+            RefreshNSE();
         }
 
-        public void DisableAllNSE()
+        public void RefreshNSE()
         {
             foreach (NSEInfo nse in nseList)
             {
-                nse.DisableSound();
-            }
-        }
-
-        public void EnableAllNSE()
-        {
-            foreach (NSEInfo nse in nseList)
-            {
-                nse.EnableSound();
+                nse.ValidateParams();
             }
         }
 
@@ -249,25 +234,31 @@ namespace CommandoYuukaVoiceover
                 this.eventName = source.eventName;
             }
 
-            public void DisableSound()
+            private void DisableSound()
             {
-                ValidateParams();
                 nse.akId = 0u;
                 nse.eventName = string.Empty;
             }
 
-            public void EnableSound()
+            private void EnableSound()
             {
-                ValidateParams();
                 nse.akId = this.akId;
                 nse.eventName = this.eventName;
             }
 
-            //Failsafe in case the NSE was added before the catalog fully loaded.
-            private void ValidateParams()
+            public void ValidateParams()
             {
                 if (this.akId == 0u) this.akId = nse.akId;
                 if (this.eventName == string.Empty) this.eventName = nse.eventName;
+
+                if (!enableVoicelines.Value)
+                {
+                    DisableSound();
+                }
+                else
+                {
+                    EnableSound();
+                }
             }
         }
     }
