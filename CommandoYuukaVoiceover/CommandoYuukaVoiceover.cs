@@ -5,6 +5,7 @@ using CommandoYuukaVoiceover.Modules;
 using RoR2;
 using RoR2.Audio;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -53,12 +54,25 @@ namespace CommandoYuukaVoiceover
             Content.networkSoundEventDefs.Add(CommandoYuukaVoiceoverComponent.nseShout);
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
+            enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
             }
 
             commandoSurvivorDef = Addressables.LoadAssetAsync<SurvivorDef>("RoR2/Base/Commando/Commando.asset").WaitForCompletion();
+        }
+
+        private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
+        {
+            if (enableVoicelines.Value)
+            {
+                EnableAllNSE();
+            }
+            else
+            {
+                DisableAllNSE();
+            }
         }
 
         private void Start()
@@ -195,6 +209,64 @@ namespace CommandoYuukaVoiceover
             }
 
             CommandoYuukaVoiceoverComponent.ScepterIndex = ItemCatalog.FindItemIndex("ITEM_ANCIENT_SCEPTER");
+
+            //Do this in OnLoad since the NSE have been fully loaded by this point.
+            nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseBlock));
+            nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseShout));
+            nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseShrineFail));
+            nseList.Add(new NSEInfo(CommandoYuukaVoiceoverComponent.nseSpecial));
+        }
+
+        public void DisableAllNSE()
+        {
+            foreach (NSEInfo nse in nseList)
+            {
+                nse.DisableSound();
+            }
+        }
+
+        public void EnableAllNSE()
+        {
+            foreach (NSEInfo nse in nseList)
+            {
+                nse.EnableSound();
+            }
+        }
+
+        public static List<NSEInfo> nseList = new List<NSEInfo>();
+        public class NSEInfo
+        {
+            public NetworkSoundEventDef nse;
+            public uint akId = 0u;
+            public string eventName = string.Empty;
+
+            public NSEInfo(NetworkSoundEventDef source)
+            {
+                this.nse = source;
+                this.akId = source.akId;
+                this.eventName = source.eventName;
+            }
+
+            public void DisableSound()
+            {
+                ValidateParams();
+                nse.akId = 0u;
+                nse.eventName = string.Empty;
+            }
+
+            public void EnableSound()
+            {
+                ValidateParams();
+                nse.akId = this.akId;
+                nse.eventName = this.eventName;
+            }
+
+            //Failsafe in case the NSE was added before the catalog fully loaded.
+            private void ValidateParams()
+            {
+                if (this.akId == 0u) this.akId = nse.akId;
+                if (this.eventName == string.Empty) this.eventName = nse.eventName;
+            }
         }
     }
 }
