@@ -16,7 +16,7 @@ namespace CommandoYuukaVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando")]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.2.3")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.2.4")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -136,7 +136,7 @@ namespace CommandoYuukaVoiceover
                         BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
                         int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);
                         SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
-                        if (CommandoYuukaVoiceoverComponent.requiredSkinDefs.Contains(safe))
+                        if (CommandoYuukaVoiceoverComponent.requiredSkinDefs.Contains(safe) && enableVoicelines.Value)
                         {
                             bool played = false;
                             if (!playedSeasonalVoiceline)
