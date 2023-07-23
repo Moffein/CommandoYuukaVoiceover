@@ -93,7 +93,7 @@ namespace CommandoYuukaVoiceover.Components
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
-            if (played) specialCooldown = 30f;
+            if (played) specialCooldown = 20f;
         }
 
         public override void PlayTeleporterFinish()
@@ -122,7 +122,7 @@ namespace CommandoYuukaVoiceover.Components
             if (!NetworkServer.active || blockedCooldown > 0f) return;
             //bool playedBlocked = TryPlaySound("Play_CommandoYuuka_Blocked", 0.75f, false);
             bool played = TryPlayNetworkSound(nseBlock, 0.75f, false);
-            if (played) blockedCooldown = 10f;
+            if (played) blockedCooldown = 30f;
         }
 
         public override void PlayLevelUp()
@@ -152,7 +152,7 @@ namespace CommandoYuukaVoiceover.Components
         public void PlayAcquireScepter()
         {
             if (acquiredScepter) return;
-            TryPlaySound("Play_CommandoYuuka_AcquireScepter", 3.7f, false);
+            TryPlaySound("Play_CommandoYuuka_AcquireScepter", 3.7f, true);
             acquiredScepter = true;
         }
 
