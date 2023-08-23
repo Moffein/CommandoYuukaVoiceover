@@ -137,13 +137,20 @@ namespace CommandoYuukaVoiceover.Components
             return TryPlayNetworkSound(nse.index, cooldown, forcePlay);
         }
 
-        public bool TryPlayNetworkSound( NetworkSoundEventIndex networkSoundIndex, float cooldown, bool forcePlay)
+        public bool TryPlayNetworkSound(NetworkSoundEventIndex networkSoundIndex, float cooldown, bool forcePlay)
         {
             bool playedSound = false;
 
             if (CommandoYuukaVoiceover.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay))
             {
-                EntitySoundManager.EmitSoundServer(networkSoundIndex, base.gameObject);
+                if (NetworkServer.active)
+                {
+                    EntitySoundManager.EmitSoundServer(networkSoundIndex, base.gameObject);
+                }
+                else
+                {
+                    EffectManager.SimpleSoundEffect(networkSoundIndex, base.gameObject.transform.position, true);
+                }
                 playedSound = true;
 
                 SetVoiceCooldown(cooldown);
