@@ -22,6 +22,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>libs\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="BaseVoiceoverLib">
+      <HintPath>libs\HardDependencies\BaseVoiceoverLib.dll</HintPath>
+    </Reference>
     <Reference Include="BepInEx">
       <HintPath>libs\BepInEx\BepInEx.dll</HintPath>
     </Reference>

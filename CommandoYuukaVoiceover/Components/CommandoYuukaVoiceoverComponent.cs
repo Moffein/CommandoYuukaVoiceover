@@ -2,19 +2,16 @@
 using RoR2;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using BaseVoiceoverLib;
 
 namespace CommandoYuukaVoiceover.Components
 {
     public class CommandoYuukaVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-
         public static NetworkSoundEventDef nseShout;
         public static NetworkSoundEventDef nseSpecial;
         public static NetworkSoundEventDef nseBlock;
         public static NetworkSoundEventDef nseShrineFail;
-
-        public static ItemIndex ScepterIndex;
 
         private float lowHealthCooldown = 0f;
         private float blockedCooldown = 0f;
@@ -23,20 +20,10 @@ namespace CommandoYuukaVoiceover.Components
         private float shrineOfChanceFailCooldown = 0f;
         private bool acquiredScepter = false;
 
-        protected override void Awake()
-        {
-            spawnVoicelineDelay = 3f;
-            if (Run.instance && Run.instance.stageClearCount == 0)
-            {
-                spawnVoicelineDelay = 6.5f;
-            }
-            base.Awake();
-        }
-
         protected override void Start()
         {
             base.Start();
-            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(scepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
@@ -71,25 +58,12 @@ namespace CommandoYuukaVoiceover.Components
             if (playedLowHealth) lowHealthCooldown = 60f;
         }
 
-        public override void PlayPrimaryAuthority() { }
-
-        public override void PlaySecondaryAuthority() { }
-
         public override void PlaySpawn()
         {
-            //Use Title Drop in character select instead.
-            /*if (Util.CheckRoll(1f))
-            {
-                TryPlaySound("Play_CommandoYuuka_TitleDrop", 1f, true);
-            }
-            else
-            {
-                TryPlaySound("Play_CommandoYuuka_Spawn", 5f, true);
-            }*/
             TryPlaySound("Play_CommandoYuuka_Spawn", 5f, true);
         }
 
-        public override void PlaySpecialAuthority()
+        public override void PlaySpecialAuthority(GenericSkill skill)
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseSpecial, 1.7f, false);
@@ -112,7 +86,7 @@ namespace CommandoYuukaVoiceover.Components
             TryPlaySound("Play_CommandoYuuka_TeleporterStart", 1.95f, false);
         }
 
-        public override void PlayUtilityAuthority()
+        public override void PlayUtilityAuthority(GenericSkill skill)
         {
             TryPlayNetworkSound(nseShout, 0f, false);
         }
@@ -135,7 +109,7 @@ namespace CommandoYuukaVoiceover.Components
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
         {
             base.Inventory_onItemAddedClient(itemIndex);
-            if (CommandoYuukaVoiceoverComponent.ScepterIndex != ItemIndex.None && itemIndex == CommandoYuukaVoiceoverComponent.ScepterIndex)
+            if (scepterIndex != ItemIndex.None && itemIndex == scepterIndex)
             {
                 PlayAcquireScepter();
             } 
@@ -161,7 +135,7 @@ namespace CommandoYuukaVoiceover.Components
             TryPlaySound("Play_CommandoYuuka_FindLegendary", 5.75f, false);
         }
 
-        public void PlayShrineOfChanceFailServer()
+        public override void PlayShrineOfChanceFailServer()
         {
             if (!NetworkServer.active || shrineOfChanceFailCooldown > 0f) return;
             if (Util.CheckRoll(15f))
