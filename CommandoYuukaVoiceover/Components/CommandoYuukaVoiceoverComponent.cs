@@ -144,7 +144,6 @@ namespace CommandoYuukaVoiceover.Components
 
         protected override void CheckInputs()
         {
-            base.CheckInputs();
             if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonTitle))
             {
                 TryPlayNetworkSound(nseTitle, 0.8f, false);
