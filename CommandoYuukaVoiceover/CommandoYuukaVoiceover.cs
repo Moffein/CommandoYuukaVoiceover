@@ -143,7 +143,7 @@ namespace CommandoYuukaVoiceover
             CommandoYuukaVoiceoverComponent.nseSpecial = RegisterNSE("Play_CommandoYuuka_CommonSkill");
             CommandoYuukaVoiceoverComponent.nseBlock = RegisterNSE("Play_CommandoYuuka_Blocked");
             CommandoYuukaVoiceoverComponent.nseShrineFail = RegisterNSE("Play_CommandoYuuka_ShrineFail");
-            CommandoYuukaVoiceoverComponent.nseShout = RegisterNSE("Play_CommandoYuuka_ShrineShout");
+            CommandoYuukaVoiceoverComponent.nseShout = RegisterNSE("Play_CommandoYuuka_Shout");
         }
 
         private NetworkSoundEventDef RegisterNSE(string eventName)
