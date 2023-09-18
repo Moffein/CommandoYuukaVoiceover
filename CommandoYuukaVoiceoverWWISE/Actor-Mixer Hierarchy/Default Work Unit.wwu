@@ -1673,34 +1673,6 @@
 																<ItemRef Name="Yuuka_Lobby_3" ID="{B53E3AF0-1987-4AC3-83AB-27E61F0BCCD2}"/>
 															</Playlist>
 														</RandomSequenceContainer>
-														<Sound Name="Yuuka_Gachaget" ID="{B0A6BEC0-259B-41F5-ABF0-D99F6C1014DB}" ShortID="417858396">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}">
-																	<Language>SFX</Language>
-																	<AudioFile>Yuuka_Gachaget.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="644165261"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="Relationship" ID="{2BB68638-8777-4CB3-AB75-044E6EC46019}" ShortID="578199752">
@@ -1827,6 +1799,34 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<Sound Name="Yuuka_Gachaget" ID="{B0A6BEC0-259B-41F5-ABF0-D99F6C1014DB}" ShortID="417858396">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Gachaget.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="644165261"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

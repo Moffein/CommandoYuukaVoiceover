@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="825536434" Language="SFX" Hash="294709842">
+		<SoundBank Id="825536434" Language="SFX" Hash="3918466593">
 			<ObjectPath>\SoundBanks\Default Work Unit\CommandoYuukaSounds</ObjectPath>
 			<ShortName>CommandoYuukaSounds</ShortName>
 			<Path>CommandoYuukaSounds.bnk</Path>
@@ -56,6 +56,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3629241375" Name="Play_CommandoYuuka_Factor" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Factor">
+					<IncludedMemoryFiles>
+						<File Id="1028631496" Language="SFX">
+							<ShortName>Yuuka_ExSkill_1.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3403375318" Name="Play_CommandoYuuka_FindLegendary" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_FindLegendary">
 					<IncludedMemoryFiles>
 						<File Id="223349314" Language="SFX">
@@ -73,6 +81,30 @@
 						<File Id="928788629" Language="SFX">
 							<ShortName>Yuuka_Relationship_Up_1.wav</ShortName>
 							<Path>SFX\Yuuka_Relationship_Up_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3877717607" Name="Play_CommandoYuuka_Ikuwayo" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Ikuwayo">
+					<IncludedMemoryFiles>
+						<File Id="863568560" Language="SFX">
+							<ShortName>Yuuka_Battle_TacticalAction_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_TacticalAction_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="563324300" Name="Play_CommandoYuuka_Intro" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Intro">
+					<IncludedMemoryFiles>
+						<File Id="644165261" Language="SFX">
+							<ShortName>Yuuka_Gachaget.wav</ShortName>
+							<Path>SFX\Yuuka_Gachaget_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="518673869" Name="Play_CommandoYuuka_Kanpeki" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Kanpeki">
+					<IncludedMemoryFiles>
+						<File Id="705617012" Language="SFX">
+							<ShortName>Yuuka_Battle_Victory_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Victory_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -126,10 +158,6 @@
 							<ShortName>Yuuka_Login_2.wav</ShortName>
 							<Path>SFX\Yuuka_Login_2_10C4C929.wem</Path>
 						</File>
-						<File Id="644165261" Language="SFX">
-							<ShortName>Yuuka_Gachaget.wav</ShortName>
-							<Path>SFX\Yuuka_Gachaget_10C4C929.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4146845953" Name="Play_CommandoYuuka_Lobby_bday" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Lobby_bday">
@@ -164,11 +192,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2024284184" Name="Play_CommandoYuuka_Logic" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Logic">
+					<IncludedMemoryFiles>
+						<File Id="19361950" Language="SFX">
+							<ShortName>Yuuka_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Yuuka_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1079413954" Name="Play_CommandoYuuka_LowHealth" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_LowHealth">
 					<IncludedMemoryFiles>
 						<File Id="658185369" Language="SFX">
 							<ShortName>Yuuka_Battle_Covered_1.wav</ShortName>
 							<Path>SFX\Yuuka_Battle_Covered_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1115930947" Name="Play_CommandoYuuka_MathTruth" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_MathTruth">
+					<IncludedMemoryFiles>
+						<File Id="945024259" Language="SFX">
+							<ShortName>Yuuka_Battle_Victory_2.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Victory_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -193,6 +237,14 @@
 						<File Id="1007828254" Language="SFX">
 							<ShortName>Yuuka_Cafe_monolog_2.wav</ShortName>
 							<Path>SFX\Yuuka_Cafe_monolog_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="823185301" Name="Play_CommandoYuuka_Smart" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Smart">
+					<IncludedMemoryFiles>
+						<File Id="271555055" Language="SFX">
+							<ShortName>Yuuka_Tactic_Victory_1.wav</ShortName>
+							<Path>SFX\Yuuka_Tactic_Victory_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -257,6 +309,14 @@
 						<File Id="1028631496" Language="SFX">
 							<ShortName>Yuuka_ExSkill_1.wav</ShortName>
 							<Path>SFX\Yuuka_ExSkill_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3266889885" Name="Play_CommandoYuuka_Thanks" ObjectPath="\Events\Default Work Unit\Play_CommandoYuuka_Thanks">
+					<IncludedMemoryFiles>
+						<File Id="526122356" Language="SFX">
+							<ShortName>Yuuka_Battle_Buffed_1.wav</ShortName>
+							<Path>SFX\Yuuka_Battle_Buffed_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

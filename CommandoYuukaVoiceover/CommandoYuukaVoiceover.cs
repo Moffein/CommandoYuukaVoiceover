@@ -21,6 +21,7 @@ namespace CommandoYuukaVoiceover
     [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.3.0")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
+        public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonIntro, buttonHurt, buttonKanpeki, buttonSmart, buttonLogic, buttonFactor, buttonMuda, buttonThanks, buttonIku, buttonMathTruth, buttonShout;
         public static ConfigEntry<bool> enableVoicelines;
 
         public static bool playedSeasonalVoiceline = false;
@@ -41,6 +42,19 @@ namespace CommandoYuukaVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Commando Yuuka Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
+
+            buttonTitle = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Blue Archive"), KeyboardShortcut.Empty);
+            buttonIntro = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Introduction"), KeyboardShortcut.Empty);
+            buttonKanpeki = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Kanpeki"), KeyboardShortcut.Empty);
+            buttonSmart = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Smart"), KeyboardShortcut.Empty);
+            buttonLogic = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Logic and Reason"), KeyboardShortcut.Empty);
+            buttonFactor = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Factorize"), KeyboardShortcut.Empty);
+            buttonMathTruth = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Math leads to truth"), KeyboardShortcut.Empty);
+            buttonThanks = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Thanks"), KeyboardShortcut.Empty);
+            buttonMuda = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Muda"), KeyboardShortcut.Empty);
+            buttonIku = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Lets go"), KeyboardShortcut.Empty);
+            buttonHurt = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hurt"), KeyboardShortcut.Empty);
+            buttonShout = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Shout"), KeyboardShortcut.Empty);
 
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
@@ -63,6 +77,19 @@ namespace CommandoYuukaVoiceover
         {
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.CheckBoxOption(enableVoicelines));
             RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("flyingYuuka"));
+
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonTitle));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIntro));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonKanpeki));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonSmart));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonLogic));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonFactor));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMathTruth));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonThanks));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMuda));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIku));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHurt));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonShout));
         }
 
         private void OnLoad()
@@ -144,6 +171,16 @@ namespace CommandoYuukaVoiceover
             CommandoYuukaVoiceoverComponent.nseBlock = RegisterNSE("Play_CommandoYuuka_Blocked");
             CommandoYuukaVoiceoverComponent.nseShrineFail = RegisterNSE("Play_CommandoYuuka_ShrineFail");
             CommandoYuukaVoiceoverComponent.nseShout = RegisterNSE("Play_CommandoYuuka_Shout");
+            CommandoYuukaVoiceoverComponent.nseTitle = RegisterNSE("Play_CommandoYuuka_TitleDrop");
+            CommandoYuukaVoiceoverComponent.nseIntro = RegisterNSE("Play_CommandoYuuka_Intro");
+            CommandoYuukaVoiceoverComponent.nseHurt = RegisterNSE("Play_CommandoYuuka_TakeDamage");
+            CommandoYuukaVoiceoverComponent.nseKanpeki = RegisterNSE("Play_CommandoYuuka_Kanpeki");
+            CommandoYuukaVoiceoverComponent.nseSmart = RegisterNSE("Play_CommandoYuuka_Smart");
+            CommandoYuukaVoiceoverComponent.nseLogic = RegisterNSE("Play_CommandoYuuka_Logic");
+            CommandoYuukaVoiceoverComponent.nseFactor = RegisterNSE("Play_CommandoYuuka_Factor");
+            CommandoYuukaVoiceoverComponent.nseThanks = RegisterNSE("Play_CommandoYuuka_Thanks");
+            CommandoYuukaVoiceoverComponent.nseIku = RegisterNSE("Play_CommandoYuuka_Ikuwayo");
+            CommandoYuukaVoiceoverComponent.nseMathTruth = RegisterNSE("Play_CommandoYuuka_MathTruth");
         }
 
         private NetworkSoundEventDef RegisterNSE(string eventName)

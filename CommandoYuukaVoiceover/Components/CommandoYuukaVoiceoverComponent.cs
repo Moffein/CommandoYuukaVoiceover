@@ -8,10 +8,7 @@ namespace CommandoYuukaVoiceover.Components
 {
     public class CommandoYuukaVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseShout;
-        public static NetworkSoundEventDef nseSpecial;
-        public static NetworkSoundEventDef nseBlock;
-        public static NetworkSoundEventDef nseShrineFail;
+        public static NetworkSoundEventDef nseShout, nseSpecial, nseBlock, nseShrineFail, nseTitle, nseIntro, nseHurt, nseKanpeki, nseSmart, nseLogic, nseFactor, nseThanks, nseIku, nseMathTruth;
 
         private float lowHealthCooldown = 0f;
         private float blockedCooldown = 0f;
@@ -142,6 +139,71 @@ namespace CommandoYuukaVoiceover.Components
             {
                 bool played = TryPlayNetworkSound(nseShrineFail, 4.5f, false);
                 if (played) shrineOfChanceFailCooldown = 60f;
+            }
+        }
+
+        protected override void CheckInputs()
+        {
+            base.CheckInputs();
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonTitle))
+            {
+                TryPlayNetworkSound(nseTitle, 0.8f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonIntro))
+            {
+                TryPlayNetworkSound(nseIntro, 7f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonKanpeki))
+            {
+                TryPlayNetworkSound(nseKanpeki, 2.3f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonSmart))
+            {
+                TryPlayNetworkSound(nseSmart, 1.6f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonLogic))
+            {
+                TryPlayNetworkSound(nseLogic, 1.6f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonFactor))
+            {
+                TryPlayNetworkSound(nseFactor, 3f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonMathTruth))
+            {
+                TryPlayNetworkSound(nseMathTruth, 3.4f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonMuda))
+            {
+                TryPlayNetworkSound(nseBlock, 0.5f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonThanks))
+            {
+                TryPlayNetworkSound(nseThanks, 0.8f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonIku))
+            {
+                TryPlayNetworkSound(nseIku, 0.6f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonHurt))
+            {
+                TryPlayNetworkSound(nseHurt, 0.1f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(CommandoYuukaVoiceover.buttonShout))
+            {
+                TryPlayNetworkSound(nseShout, 0.1f, false);
+                return;
             }
         }
     }

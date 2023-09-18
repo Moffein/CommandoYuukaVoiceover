@@ -212,6 +212,94 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CommandoYuuka_Intro" ID="{8B28E154-1DA5-497C-9089-7A8793968607}">
+					<ChildrenList>
+						<Action Name="" ID="{6F69365E-6D53-4A8C-B987-1BC6989BEE74}" ShortID="997325152">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Gachaget" ID="{B0A6BEC0-259B-41F5-ABF0-D99F6C1014DB}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Kanpeki" ID="{2A9E557D-3FBF-417C-B2B6-450DA3FF8561}">
+					<ChildrenList>
+						<Action Name="" ID="{FF323042-F549-4EDD-ABE8-AD6198C2D65A}" ShortID="660290231">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_Victory_1" ID="{3886C30B-2C87-44C3-8B4B-21F93B68694E}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Smart" ID="{5A2D1393-FC6C-405B-94D1-870AA2CB6172}">
+					<ChildrenList>
+						<Action Name="" ID="{0EDC09A5-CC57-4752-9E59-E0BBD420CCDE}" ShortID="852290111">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Tactic_Victory_1" ID="{23E5E459-A08A-4B8C-B2DF-FEB70E49B52E}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Logic" ID="{8FD91A8C-C9F0-4D6B-ADEF-645835199C38}">
+					<ChildrenList>
+						<Action Name="" ID="{D0475F53-FB97-49CC-A104-F9302DE1E005}" ShortID="8142383">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_ExSkill_Level_2" ID="{33928434-C71D-4EB6-8909-68B13660EE34}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Factor" ID="{5B8940A9-2CB0-4720-B3C9-C84148DD6C87}">
+					<ChildrenList>
+						<Action Name="" ID="{BCC0BF40-C420-4F69-952E-38751074F303}" ShortID="1072820426">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_ExSkill_1" ID="{F9AF5F05-230F-4B14-902A-7F5369FDB8AC}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Thanks" ID="{54E497CB-A6AB-4F66-BA6A-B9A1FDCDCD63}">
+					<ChildrenList>
+						<Action Name="" ID="{AE305755-5ADF-45AA-B797-22141C7E30D2}" ShortID="443612532">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_Buffed_1" ID="{FB16D7EA-9D5F-4AEF-86F6-2A63605797F7}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_Ikuwayo" ID="{96456ACE-596F-4AB6-9885-8941EB9D47FF}">
+					<ChildrenList>
+						<Action Name="" ID="{FEB9A003-FD39-4A6A-9FA3-55A7A91DEB57}" ShortID="39454950">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_TacticalAction_1" ID="{E079BC21-8299-4480-B4AE-40D0D932CE9A}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CommandoYuuka_MathTruth" ID="{29B6125A-C671-4716-A0B9-A21C3CFF7C7B}">
+					<ChildrenList>
+						<Action Name="" ID="{8973563A-C5EE-4FEE-9794-A262F9437BA5}" ShortID="529635658">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Yuuka_Battle_Victory_2" ID="{F1BE5099-7B94-49A8-926B-D11F554451B1}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
