@@ -205,5 +205,10 @@ namespace CommandoYuukaVoiceover.Components
                 return;
             }
         }
+
+        public override bool ComponentEnableVoicelines()
+        {
+            return CommandoYuukaVoiceover.enableVoicelines.Value;
+        }
     }
 }
