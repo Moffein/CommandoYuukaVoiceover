@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Master Mixer" ID="{BED0E177-75FE-45FA-ADE0-A3E90B394605}" ShortID="202265102">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{53966200-83A8-4239-B4C9-12E3BF9E8639}" ShortID="662069863">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Volume_SFX" ID="{FD97F26D-85D9-40CD-8EF0-DF6A0AA933E0}" WorkUnitID="{F773CB89-6353-426A-9807-34752E23FF46}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{9132B138-AE29-4A3F-8F08-15DCFF50C6FE}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
@@ -1668,10 +1638,16 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
-															<Playlist>
-																<ItemRef Name="Yuuka_Lobby_2" ID="{AA54CA79-96ED-4071-9972-81EBE9CFB1B4}"/>
-																<ItemRef Name="Yuuka_Lobby_3" ID="{B53E3AF0-1987-4AC3-83AB-27E61F0BCCD2}"/>
-															</Playlist>
+															<ObjectLists>
+																<ObjectList Name="Playlist">
+																	<Reference>
+																		<ObjectRef Name="Yuuka_Lobby_2" ID="{AA54CA79-96ED-4071-9972-81EBE9CFB1B4}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+																	</Reference>
+																	<Reference>
+																		<ObjectRef Name="Yuuka_Lobby_3" ID="{B53E3AF0-1987-4AC3-83AB-27E61F0BCCD2}" WorkUnitID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}"/>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
 												</RandomSequenceContainer>
@@ -1834,6 +1810,45 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{53966200-83A8-4239-B4C9-12E3BF9E8639}" ShortID="662069863">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Volume_SFX" ID="{FD97F26D-85D9-40CD-8EF0-DF6A0AA933E0}" WorkUnitID="{F773CB89-6353-426A-9807-34752E23FF46}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{9132B138-AE29-4A3F-8F08-15DCFF50C6FE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

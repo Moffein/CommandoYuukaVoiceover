@@ -15,10 +15,11 @@ using UnityEngine.Networking;
 
 namespace CommandoYuukaVoiceover
 {
+    [BepInDependency(R2API.SoundAPI.PluginGUID)]
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.3.1")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.3.2")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonIntro, buttonHurt, buttonKanpeki, buttonSmart, buttonLogic, buttonFactor, buttonMuda, buttonThanks, buttonIku, buttonMathTruth, buttonShout;
@@ -37,6 +38,7 @@ namespace CommandoYuukaVoiceover
             {
                 assetBundle = AssetBundle.LoadFromStream(stream);
             }
+            SoundBanks.Init();
 
             InitNSE();
 
@@ -65,11 +67,6 @@ namespace CommandoYuukaVoiceover
         private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
         {
             RefreshNSE();
-        }
-
-        private void Start()
-        {
-            SoundBanks.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]

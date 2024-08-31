@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{A4905012-5C3F-40C0-A6AC-54E5040588BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Master Mixer" ID="{BED0E177-75FE-45FA-ADE0-A3E90B394605}" ShortID="202265102">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{53966200-83A8-4239-B4C9-12E3BF9E8639}" ShortID="662069863">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_SFX" ID="{FD97F26D-85D9-40CD-8EF0-DF6A0AA933E0}" WorkUnitID="{F773CB89-6353-426A-9807-34752E23FF46}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{9132B138-AE29-4A3F-8F08-15DCFF50C6FE}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="SFX Mixer" ID="{84460850-36D4-4EDB-82A1-48B5F0BA8BE1}" ShortID="542522190">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Voiceover" ID="{FC10B709-C046-4D93-A74D-A08ECCE56459}" ShortID="1067416243">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Yuuka" ID="{8005C535-3465-4D81-9D0E-DFB5A9AB0A92}" ShortID="116600696">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Yuuka_Battle_Buffed_1" ID="{FB16D7EA-9D5F-4AEF-86F6-2A63605797F7}" ShortID="905532400">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Buffed_1" ID="{0521A8FB-A20C-4AED-8CA3-CEB5F8991F9B}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Buffed_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="526122356"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Buffed_1" ID="{0521A8FB-A20C-4AED-8CA3-CEB5F8991F9B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Battle_BuffSelf_1" ID="{C22FD9AB-775F-4CD3-8D02-DAC6EB41BF0A}" ShortID="1066436383">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_BuffSelf_1" ID="{A0CA4A62-818A-4DC4-A960-EC5C69FBDDB8}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_BuffSelf_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="700021422"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_BuffSelf_1" ID="{A0CA4A62-818A-4DC4-A960-EC5C69FBDDB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Battle_Covered_1" ID="{D55D879D-F7BE-4337-B600-F52322721D52}" ShortID="322471067">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Covered_1" ID="{D0EAEB06-E6A7-436C-B4EB-4B97F9D5270C}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Covered_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="658185369"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Covered_1" ID="{D0EAEB06-E6A7-436C-B4EB-4B97F9D5270C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Battle_Defense_1" ID="{D5C59D51-8DE5-4843-ADDC-616323C0B7CE}" ShortID="508420958">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Defense_1" ID="{4BBBF32C-50C4-477D-9486-814522A3A69F}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Defense_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="365469655"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Defense_1" ID="{4BBBF32C-50C4-477D-9486-814522A3A69F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Battle_Recovery_1" ID="{5BDC8670-9AED-40DA-BCCF-087147C2C450}" ShortID="375820858">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Recovery_1" ID="{490B4769-2172-4565-B6B1-F8354E43E5C6}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Recovery_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="177655510"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Recovery_1" ID="{490B4769-2172-4565-B6B1-F8354E43E5C6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Cafe_Act_1" ID="{3141A5C8-2BCB-4D85-8B4A-92E0366E000C}" ShortID="714062206">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Cafe_Act_1" ID="{C1F688FF-328A-4D4A-804E-D331AC78C46B}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Cafe_Act_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="983918205"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Cafe_Act_1" ID="{C1F688FF-328A-4D4A-804E-D331AC78C46B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Cafe_Act_2" ID="{5696A0FC-F0D3-4570-8B12-BF249D4F02E9}" ShortID="353295459">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Cafe_Act_2" ID="{6D1C95D1-6B9E-4300-9D7A-E585B58DAF1B}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Cafe_Act_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="350408003"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Cafe_Act_2" ID="{6D1C95D1-6B9E-4300-9D7A-E585B58DAF1B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Cafe_monolog_1" ID="{5BD402BF-A3CB-421B-862C-2BE07AD365AD}" ShortID="412366935">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Cafe_monolog_1" ID="{585401B9-0597-4A51-89E2-B816A5CE529F}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Cafe_monolog_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="4641151"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Cafe_monolog_1" ID="{585401B9-0597-4A51-89E2-B816A5CE529F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Cafe_monolog_2" ID="{732033C0-5156-4D54-8A0F-D8EF08B6DFB4}" ShortID="721669856">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Cafe_monolog_2" ID="{63016BF9-B604-476F-B62E-E37285CC1AE2}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Cafe_monolog_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1007828254"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Cafe_monolog_2" ID="{63016BF9-B604-476F-B62E-E37285CC1AE2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_CommonSkill" ID="{9187075E-4DD6-454D-B77F-D4A3455142B5}" ShortID="136351532">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_CommonSkill" ID="{DF7AC9D2-7B92-4C2B-9BBF-FEC85A2488A3}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_CommonSkill.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="990236852"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_CommonSkill" ID="{DF7AC9D2-7B92-4C2B-9BBF-FEC85A2488A3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_ExWeapon_Get" ID="{C56746C8-9CE8-4568-9C5F-BD07003E8337}" ShortID="51796916">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_ExWeapon_Get" ID="{187955F8-7B57-41F1-B863-EC154E4159D7}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_ExWeapon_Get.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="346560552"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_ExWeapon_Get" ID="{187955F8-7B57-41F1-B863-EC154E4159D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Formation_In_1" ID="{7D34D3ED-F26A-435D-9838-89614F0CA6B8}" ShortID="355624189">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Formation_In_1" ID="{BEBE7439-0DBC-40CE-88E0-5AB937A9D94A}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Formation_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="71935249"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Formation_In_1" ID="{BEBE7439-0DBC-40CE-88E0-5AB937A9D94A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Formation_In_2" ID="{E62125C7-C483-42B0-9248-A7135E7E7D40}" ShortID="880365664">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Formation_In_2" ID="{2AB9D9BE-2FE9-4F4A-9BBD-100597AD8CE6}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Formation_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="771875244"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Formation_In_2" ID="{2AB9D9BE-2FE9-4F4A-9BBD-100597AD8CE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Formation_Select" ID="{85C4AB94-96A8-4C57-A031-C3D65857D15F}" ShortID="757327252">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Formation_Select" ID="{1422AFD5-B7FF-4CE6-A300-E016032BCC2C}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Formation_Select.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1002769491"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Formation_Select" ID="{1422AFD5-B7FF-4CE6-A300-E016032BCC2C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Season_Birthday" ID="{50BD5181-E522-40C6-A9CD-6AC72D6E449D}" ShortID="275482113">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Season_Birthday" ID="{F14C528B-49BA-43C6-91C3-0E32E45822E5}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Season_Birthday.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="526468187"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Season_Birthday" ID="{F14C528B-49BA-43C6-91C3-0E32E45822E5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Season_Birthday_Player" ID="{E990D8F5-E661-4747-9A33-93B19BAF4FF5}" ShortID="509859130">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Season_Birthday_Player" ID="{77FBFF30-6E26-4722-BC3B-DBFE5C6B614E}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Season_Birthday_Player.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="67013102"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Season_Birthday_Player" ID="{77FBFF30-6E26-4722-BC3B-DBFE5C6B614E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Season_Halloween" ID="{23F3BBA7-1B5C-4A07-98BD-605F01A357D3}" ShortID="586929920">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Season_Halloween" ID="{36884766-3391-4661-96B3-152F4C93DB4D}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Season_Halloween.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="526784156"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Season_Halloween" ID="{36884766-3391-4661-96B3-152F4C93DB4D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Season_Newyear" ID="{D41B91CF-592B-4AF0-9D3A-2B88E0020609}" ShortID="842903601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Season_Newyear" ID="{1FF05C67-E3A1-45BF-9461-C9718D5769BD}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Season_Newyear.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="633912011"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Season_Newyear" ID="{1FF05C67-E3A1-45BF-9461-C9718D5769BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Season_Xmas" ID="{0140CB3C-EE3C-4808-BD65-DE819A0C9A51}" ShortID="202425335">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Season_Xmas" ID="{169762D9-D00C-496E-8232-21A0568BCFA8}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Season_Xmas.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="276240643"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Season_Xmas" ID="{169762D9-D00C-496E-8232-21A0568BCFA8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Title" ID="{2400BB83-BDE3-48CB-BC0E-95F7C8EBDD91}" ShortID="772081832">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Title" ID="{6AFAC517-A5CB-4FDB-AFED-22F1B5D04449}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Title.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="320028994"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Title" ID="{6AFAC517-A5CB-4FDB-AFED-22F1B5D04449}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="TakeDamage" ID="{0C7CC10F-BF33-44D1-8B3F-533658F452CA}" ShortID="353620739">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Battle_Damage_1" ID="{A929E7B8-E514-40E9-919F-1D5C31278867}" ShortID="739125552">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Damage_1" ID="{502F89A9-65A0-480D-B337-5F83A1FC461A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Damage_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="226288733"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Damage_1" ID="{502F89A9-65A0-480D-B337-5F83A1FC461A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Damage_3" ID="{95F74462-4816-4B02-8097-DEB0225D275B}" ShortID="428901214">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Damage_3" ID="{24F8F013-F645-4567-A0DF-E77F66B7EC66}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Damage_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="447216740"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Damage_3" ID="{24F8F013-F645-4567-A0DF-E77F66B7EC66}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Damage_2" ID="{3B23B96C-17FC-47EA-BCB9-6AAAD6F7EE31}" ShortID="632856491">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Damage_2" ID="{F441FC06-4E73-4FCA-B82B-40D9737CF05C}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Damage_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="171627256"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Damage_2" ID="{F441FC06-4E73-4FCA-B82B-40D9737CF05C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Victory" ID="{F98FFEED-81DD-42EE-9CB4-B78F7FD7A236}" ShortID="541277102">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Tactic_Victory_2" ID="{FBA3A1AC-A283-4678-A3F4-F244893C2DEC}" ShortID="553767559">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_Victory_2" ID="{6823A7E7-8788-4541-939D-BBEB3BEDD74A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_Victory_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="695527691"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_Victory_2" ID="{6823A7E7-8788-4541-939D-BBEB3BEDD74A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Tactic_Victory_1" ID="{23E5E459-A08A-4B8C-B2DF-FEB70E49B52E}" ShortID="489410538">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_Victory_1" ID="{1E105BED-75BD-459E-806E-198A48D1083A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_Victory_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="271555055"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_Victory_1" ID="{1E105BED-75BD-459E-806E-198A48D1083A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Victory_1" ID="{3886C30B-2C87-44C3-8B4B-21F93B68694E}" ShortID="129418163">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Victory_1" ID="{C9741276-0C4B-4F77-88FF-532AD43D0F9B}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Victory_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="705617012"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Victory_1" ID="{C9741276-0C4B-4F77-88FF-532AD43D0F9B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Victory_2" ID="{F1BE5099-7B94-49A8-926B-D11F554451B1}" ShortID="289006429">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Victory_2" ID="{79CBEC1C-C867-4960-A4FA-6DF4CE864B0B}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Victory_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="945024259"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Victory_2" ID="{79CBEC1C-C867-4960-A4FA-6DF4CE864B0B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Shout" ID="{3880927F-2A67-49C3-9F3D-73BD6CA4724D}" ShortID="611331450">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Battle_Shout_2" ID="{C029ACEB-1376-4CE7-B7C0-6A483F1C4B5A}" ShortID="810176132">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Shout_2_ogg" ID="{E7B13168-4AD1-479C-9381-AA4E36FAF890}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Shout_2.ogg.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="90255124"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Shout_2_ogg" ID="{E7B13168-4AD1-479C-9381-AA4E36FAF890}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Shout_3" ID="{DEE80417-2D0B-448B-866B-32FD0B91872C}" ShortID="458898790">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Shout_3" ID="{B80C0335-EB69-4976-B8B3-12A08835DE4E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Shout_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="515358168"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Shout_3" ID="{B80C0335-EB69-4976-B8B3-12A08835DE4E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_Shout_1" ID="{4E8FB724-254A-4187-BCC4-259746694279}" ShortID="758195600">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Shout_1" ID="{9A6C6BE8-6F3F-4B34-B0E0-C66E672D615D}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Shout_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="504653086"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Shout_1" ID="{9A6C6BE8-6F3F-4B34-B0E0-C66E672D615D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Defeat" ID="{FDB406E4-5FA9-435B-AF3E-2B4C2D490B8F}" ShortID="94180581">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Battle_Retire" ID="{23F908E9-644A-4D40-B436-AFB84AD6A2B4}" ShortID="293149346">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_Retire" ID="{B38DD82D-62AA-4DEF-A66B-951C7BCC1359}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_Retire.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="56185522"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_Retire" ID="{B38DD82D-62AA-4DEF-A66B-951C7BCC1359}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Tactic_Defeat_1" ID="{67C2DE41-3FDE-43C3-8179-421978F2795D}" ShortID="383136845">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_Defeat_1" ID="{3A7FFEF6-0E70-48FD-99C6-C83CBBD57CAE}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_Defeat_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="604969384"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_Defeat_1" ID="{3A7FFEF6-0E70-48FD-99C6-C83CBBD57CAE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Tactic_Defeat_2" ID="{68E913D2-86B3-462B-8714-C2859775A3AF}" ShortID="580216715">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_Defeat_2" ID="{7EAE1D55-65B9-4475-8105-AD4366C95689}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_Defeat_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="817874288"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_Defeat_2" ID="{7EAE1D55-65B9-4475-8105-AD4366C95689}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Spawn" ID="{13DD965E-899B-411F-BF62-198C17744B34}" ShortID="992114338">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Tactic_In_1" ID="{4B07CD41-9CFF-490A-A800-9270E6EDA244}" ShortID="707063378">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_In_1" ID="{2897A117-EC53-4894-A844-DC54071250C3}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_In_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="724301207"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_In_1" ID="{2897A117-EC53-4894-A844-DC54071250C3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Tactic_In_2" ID="{8A87FE2E-48B0-4491-AA03-2AEE8E21B134}" ShortID="179740703">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Tactic_In_2" ID="{40BCBE6A-2190-43F8-8A1B-9FFC0D070AB9}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Tactic_In_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="579430091"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Tactic_In_2" ID="{40BCBE6A-2190-43F8-8A1B-9FFC0D070AB9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_In_1" ID="{3408F68C-1576-4966-A6D8-A75FB3EA6AB9}" ShortID="306088679">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_In_1" ID="{A8DC09DA-361D-454B-B824-E8369DEBD9E6}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_In_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="101099799"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_In_1" ID="{A8DC09DA-361D-454B-B824-E8369DEBD9E6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Battle_In_2" ID="{681837EB-5496-4F8F-BB21-3362DE753607}" ShortID="94290165">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Battle_In_2" ID="{16AD19AA-21FE-4532-B759-474C4C2A94AF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Battle_In_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="463686919"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Battle_In_2" ID="{16AD19AA-21FE-4532-B759-474C4C2A94AF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="TeleporterStart" ID="{A3A25D14-30BD-4A77-B5F7-3CD944AEFD10}" ShortID="1002680273">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_ExSkill_Level_1" ID="{2B0E7A35-2D33-4B26-B6E1-F41CAE214CED}" ShortID="385484394">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_Level_1" ID="{FBAEACEC-39F1-4668-B812-121EF947C5EF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_Level_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="736941155"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_Level_1" ID="{FBAEACEC-39F1-4668-B812-121EF947C5EF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_ExSkill_2" ID="{DA17D9A6-0865-477E-9AB0-383873169452}" ShortID="683977871">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_2" ID="{FE8ED077-A11D-495E-849C-46DA0BE92C48}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="600753922"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_2" ID="{FE8ED077-A11D-495E-849C-46DA0BE92C48}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_ExSkill_3" ID="{CAE58B28-1192-4063-999B-56CBE73B76DB}" ShortID="154435698">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_3" ID="{FFB8B24D-2854-457C-B413-B1260760336E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="38542921"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_3" ID="{FFB8B24D-2854-457C-B413-B1260760336E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_ExSkill_Level_3" ID="{A89A515A-2F27-4FB4-8CA9-D4336B389C71}" ShortID="853708433">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_Level_3" ID="{15BD969E-2738-42E6-8F8E-7CBB771FC713}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_Level_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="64384609"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_Level_3" ID="{15BD969E-2738-42E6-8F8E-7CBB771FC713}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_ExSkill_1" ID="{F9AF5F05-230F-4B14-902A-7F5369FDB8AC}" ShortID="865153471">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_1" ID="{9D8074EC-AC45-4D1B-9F5B-B067A35D0C0A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1028631496"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_1" ID="{9D8074EC-AC45-4D1B-9F5B-B067A35D0C0A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_ExSkill_Level_2" ID="{33928434-C71D-4EB6-8909-68B13660EE34}" ShortID="195174774">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_ExSkill_Level_2" ID="{3832F41D-CC05-4A28-83E6-4F379320CB68}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_ExSkill_Level_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="19361950"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_ExSkill_Level_2" ID="{3832F41D-CC05-4A28-83E6-4F379320CB68}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Yuuka_Battle_TacticalAction_1" ID="{E079BC21-8299-4480-B4AE-40D0D932CE9A}" ShortID="511776345">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_TacticalAction_1" ID="{8EFB21F1-94D1-46AC-A516-7C21278B3D8F}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_TacticalAction_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="863568560"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_TacticalAction_1" ID="{8EFB21F1-94D1-46AC-A516-7C21278B3D8F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="LevelUp" ID="{96483145-EBD4-411C-8421-8BC17B652044}" ShortID="317954791">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Growup_1" ID="{58DE61C7-AD64-4319-8FAE-71207961D581}" ShortID="926895376">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Growup_1" ID="{FA14E69E-7F23-4879-B162-A3C911DB8D72}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Growup_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="399921419"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Growup_1" ID="{FA14E69E-7F23-4879-B162-A3C911DB8D72}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Growup_2" ID="{B25B4EB7-7278-4681-995B-23D36BF08F13}" ShortID="223656001">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Growup_2" ID="{CF2B1C5A-24D1-4A35-B50A-AE03293B130E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Growup_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="597898246"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Growup_2" ID="{CF2B1C5A-24D1-4A35-B50A-AE03293B130E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Growup_3" ID="{ACAAA24D-06CA-4909-A53A-63EACEA46CC7}" ShortID="618297424">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Growup_3" ID="{C4B34BCB-5E06-4BB6-8A68-FEAAB9127F62}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Growup_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="390574414"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Growup_3" ID="{C4B34BCB-5E06-4BB6-8A68-FEAAB9127F62}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Growup_4" ID="{A4761E1E-24C4-4F0C-BFA8-3001D155C1CF}" ShortID="446945086">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Growup_4" ID="{2C60AF81-8A56-406D-A27E-ADEB312154BF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Growup_4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="825947251"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Growup_4" ID="{2C60AF81-8A56-406D-A27E-ADEB312154BF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Yuuka_Battle_Move_1" ID="{4110B27C-EF4E-4CFC-AE3A-B98396B018F5}" ShortID="423907840">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Move_1" ID="{4941DE30-753C-46BE-8E08-5EF6E7CC8B6A}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Move_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="818828003"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Move_1" ID="{4941DE30-753C-46BE-8E08-5EF6E7CC8B6A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Yuuka_Battle_Move_2" ID="{9F6B7AC2-B347-456E-BCEA-FB38F19DF142}" ShortID="180414628">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Battle_Move_2" ID="{E869FADD-054E-4A62-8936-23CEC99120F0}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Battle_Move_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="452277349"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Battle_Move_2" ID="{E869FADD-054E-4A62-8936-23CEC99120F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Lobby" ID="{B2C276CF-04BC-47F1-BE3E-865DFCD1DD8C}" ShortID="911995005">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Lobby_4" ID="{F600C1CC-D07A-4BA0-8482-11F4A3F9DDCE}" ShortID="452139125">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Lobby_4" ID="{88E611E7-9E28-4A2B-BEC8-272456520AA0}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Lobby_4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="414329847"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Lobby_4" ID="{88E611E7-9E28-4A2B-BEC8-272456520AA0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Lobby_5" ID="{0D8BD72F-A09E-4E81-9F5E-BC6DCA4E34C6}" ShortID="375328338">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Lobby_5" ID="{2E909963-CBD4-4BFB-8121-7557D6A9668A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Lobby_5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="234076900"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Lobby_5" ID="{2E909963-CBD4-4BFB-8121-7557D6A9668A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Login_1" ID="{EB1C52F8-A261-4E4E-A937-41C43E9273B4}" ShortID="837482114">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Login_1" ID="{A9A69090-EE14-4E54-92E8-8E823DD0674E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Login_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="138676309"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Login_1" ID="{A9A69090-EE14-4E54-92E8-8E823DD0674E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Lobby_1" ID="{3CA44270-29F9-4D0D-9644-48CA75474E53}" ShortID="434976038">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Lobby_1" ID="{3339208F-0B0B-4C54-B5F1-1E82B2C23BFC}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Lobby_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="227923889"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Lobby_1" ID="{3339208F-0B0B-4C54-B5F1-1E82B2C23BFC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Login_2" ID="{97B9E874-CFEB-4A5F-A89C-DBF36BE3AB1A}" ShortID="683584764">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Login_2" ID="{DCD8DF74-F7C1-48A7-841D-89AFBF3E692A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Login_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="576160944"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Login_2" ID="{DCD8DF74-F7C1-48A7-841D-89AFBF3E692A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<RandomSequenceContainer Name="Yuuka_Lobby_2_and_3" ID="{31CE8B14-F9C7-4E8E-B699-F320C0EA6588}" ShortID="23292631">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Yuuka_Lobby_3" ID="{B53E3AF0-1987-4AC3-83AB-27E61F0BCCD2}" ShortID="60308424">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Yuuka_Lobby_3" ID="{6AE75430-FEA2-4F61-A3D7-F17CF4FC1C4A}">
+																			<Language>SFX</Language>
+																			<AudioFile>Yuuka_Lobby_3.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="489763893"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Yuuka_Lobby_3" ID="{6AE75430-FEA2-4F61-A3D7-F17CF4FC1C4A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Yuuka_Lobby_2" ID="{AA54CA79-96ED-4071-9972-81EBE9CFB1B4}" ShortID="91961964">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Yuuka_Lobby_2" ID="{53B34EB3-BD62-408E-AEDB-A779E2F29FF6}">
+																			<Language>SFX</Language>
+																			<AudioFile>Yuuka_Lobby_2.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="188341789"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Yuuka_Lobby_2" ID="{53B34EB3-BD62-408E-AEDB-A779E2F29FF6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<Playlist>
+																<ItemRef Name="Yuuka_Lobby_2" ID="{AA54CA79-96ED-4071-9972-81EBE9CFB1B4}"/>
+																<ItemRef Name="Yuuka_Lobby_3" ID="{B53E3AF0-1987-4AC3-83AB-27E61F0BCCD2}"/>
+															</Playlist>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Relationship" ID="{2BB68638-8777-4CB3-AB75-044E6EC46019}" ShortID="578199752">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Yuuka_Relationship_Up_4" ID="{08F3AEC7-DA1C-4914-BF3D-AB2DC47D465C}" ShortID="989142415">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Relationship_Up_4" ID="{1A3388C3-560C-4AAA-A019-92C325EB5A71}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Relationship_Up_4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="540456505"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Relationship_Up_4" ID="{1A3388C3-560C-4AAA-A019-92C325EB5A71}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Relationship_Up_3" ID="{A34740A5-79C4-4CEC-973D-63771E54C1C0}" ShortID="404175112">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Relationship_Up_3" ID="{E3A98173-C22F-402E-A714-8BFCE733E64D}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Relationship_Up_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="223349314"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Relationship_Up_3" ID="{E3A98173-C22F-402E-A714-8BFCE733E64D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Relationship_Up_1" ID="{0A6823CF-ED10-4E3C-8F2A-AE6FD0DD8230}" ShortID="673046619">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Relationship_Up_1" ID="{AD220688-02B6-4761-80A9-F092DA9FA001}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Relationship_Up_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="928788629"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Relationship_Up_1" ID="{AD220688-02B6-4761-80A9-F092DA9FA001}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Yuuka_Relationship_Up_2" ID="{84C02AE7-FA2A-428D-BCD8-B24B2284EBB9}" ShortID="149221493">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Yuuka_Relationship_Up_2" ID="{4D888CA0-3DD9-4994-BB85-6FC737D29357}">
+																	<Language>SFX</Language>
+																	<AudioFile>Yuuka_Relationship_Up_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="799090943"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Yuuka_Relationship_Up_2" ID="{4D888CA0-3DD9-4994-BB85-6FC737D29357}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Yuuka_Gachaget" ID="{B0A6BEC0-259B-41F5-ABF0-D99F6C1014DB}" ShortID="417858396">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Voice Attenuation" ID="{91E0E874-B55C-4F73-BE59-8A11F0253799}" WorkUnitID="{E49EFDC1-0B43-4367-AC97-011621276B89}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23A4D907-1688-4C60-B16D-152F507A94E5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0808C75C-5E63-4269-8DF3-FB5A1BEF184C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}">
+															<Language>SFX</Language>
+															<AudioFile>Yuuka_Gachaget.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="644165261"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Yuuka_Gachaget" ID="{CE1E9D6C-20C4-464C-87F5-A5AC299752D2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

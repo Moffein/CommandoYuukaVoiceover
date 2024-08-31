@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="CommandoYuukaVoiceoverWWISE" GUID="{6371EB7B-E06D-451C-A381-8B7138DE402F}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{BA9FFFE5-C5B9-4216-80E7-99776FBC1CB2}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{6E43A5FA-2BF2-4ABB-B504-8EE1394953E1}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{5FED8BEF-14F2-E001-FFBD-8EE65A2E690E}</FileHash>
+</ProjectInfo>
