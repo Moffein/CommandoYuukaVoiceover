@@ -362,3 +362,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /CommandoYuukaVoiceoverUnity
+/CommandoYuukaVoiceoverWWISE/CommandoYuukaVoiceoverWWISE.Lenovo.validationcache
+/CommandoYuukaVoiceoverWWISE/CommandoYuukaVoiceoverWWISE.Lenovo.wsettings
+/CommandoYuukaVoiceoverWWISE/GeneratedSoundBanks/Windows/CommandoYuukaSounds.bnk
+/CommandoYuukaVoiceoverWWISE/GeneratedSoundBanks/Windows/CommandoYuukaSounds.txt
+/CommandoYuukaVoiceoverWWISE/GeneratedSoundBanks/Windows/SoundbanksInfo.xml
