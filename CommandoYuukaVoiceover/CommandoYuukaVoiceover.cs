@@ -19,7 +19,7 @@ namespace CommandoYuukaVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Alicket.HayaseYuukaCommando", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.3.2")]
+    [BepInPlugin("com.Schale.CommandoYuukaVoiceover", "CommandoYuukaVoiceover", "1.3.4")]
     public class CommandoYuukaVoiceover : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonIntro, buttonHurt, buttonKanpeki, buttonSmart, buttonLogic, buttonFactor, buttonMuda, buttonThanks, buttonIku, buttonMathTruth, buttonShout;
@@ -123,7 +123,7 @@ namespace CommandoYuukaVoiceover
             bool played = false;
             if (!playedSeasonalVoiceline)
             {
-                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
+                if ((System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1) || (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 31))
                 {
                     Util.PlaySound("Play_CommandoYuuka_Lobby_Newyear", mannequinObject);
                     played = true;
@@ -138,7 +138,7 @@ namespace CommandoYuukaVoiceover
                     Util.PlaySound("Play_CommandoYuuka_Lobby_Halloween", mannequinObject);
                     played = true;
                 }
-                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                else if (System.DateTime.Today.Month == 12 && (System.DateTime.Today.Day == 24 || System.DateTime.Today.Day == 25))
                 {
                     Util.PlaySound("Play_CommandoYuuka_Lobby_xmas", mannequinObject);
                     played = true;
